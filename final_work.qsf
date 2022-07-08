@@ -57,3 +57,7 @@ set_global_assignment -name BDF_FILE register_8bits.bdf
 set_global_assignment -name BDF_FILE and_8bits.bdf
 set_global_assignment -name BDF_FILE or_8bits.bdf
 set_global_assignment -name BDF_FILE not_8bits.bdf
+set_global_assignment -name BSF_FILE mux8x1_8bits.bsf
+set_global_assignment -name BDF_FILE mux4x1_8bits.bdf
+set_global_assignment -name BDF_FILE mux8x1_8bits.bdf
+set_global_assignment -name BDF_FILE ahmes_alu.bdf
