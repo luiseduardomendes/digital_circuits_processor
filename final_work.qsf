@@ -51,3 +51,6 @@ set_global_assignment -name BDF_FILE mux16x1.bdf
 set_global_assignment -name BDF_FILE mux8x1.bdf
 set_global_assignment -name BDF_FILE decod3x8.bdf
 set_global_assignment -name BDF_FILE decod4x16.bdf
+set_global_assignment -name BDF_FILE flip_flop_D_edge.bdf
+set_global_assignment -name BDF_FILE register.bdf
+set_global_assignment -name BDF_FILE register_8bits.bdf
