@@ -54,3 +54,6 @@ set_global_assignment -name BDF_FILE decod4x16.bdf
 set_global_assignment -name BDF_FILE flip_flop_D_edge.bdf
 set_global_assignment -name BDF_FILE register.bdf
 set_global_assignment -name BDF_FILE register_8bits.bdf
+set_global_assignment -name BDF_FILE and_8bits.bdf
+set_global_assignment -name BDF_FILE or_8bits.bdf
+set_global_assignment -name BDF_FILE not_8bits.bdf
