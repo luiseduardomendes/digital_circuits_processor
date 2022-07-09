@@ -61,3 +61,6 @@ set_global_assignment -name BSF_FILE mux8x1_8bits.bsf
 set_global_assignment -name BDF_FILE mux4x1_8bits.bdf
 set_global_assignment -name BDF_FILE mux8x1_8bits.bdf
 set_global_assignment -name BDF_FILE ahmes_alu.bdf
+set_global_assignment -name BDF_FILE mux2x1_8bits.bdf
+set_global_assignment -name BDF_FILE decod2x4.bdf
+set_global_assignment -name BDF_FILE Ahmes.bdf

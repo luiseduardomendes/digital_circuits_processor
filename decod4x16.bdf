@@ -21,57 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 280 64 448 80)
+	(rect 232 64 400 80)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e0" (rect 5 0 17 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 280 96 448 112)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e1" (rect 5 0 17 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 280 128 448 144)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e2" (rect 5 0 17 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 280 160 448 176)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "e3" (rect 5 0 17 12)(font "Arial" ))
+	(text "e[3..0]" (rect 5 0 37 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1236,32 +1188,16 @@ applicable agreement for further details.
 	(pt 584 264)
 )
 (connector
-	(pt 448 72)
-	(pt 512 72)
-)
-(connector
 	(pt 512 72)
 	(pt 528 72)
-)
-(connector
-	(pt 448 104)
-	(pt 496 104)
 )
 (connector
 	(pt 496 104)
 	(pt 528 104)
 )
 (connector
-	(pt 448 136)
-	(pt 480 136)
-)
-(connector
 	(pt 480 136)
 	(pt 528 136)
-)
-(connector
-	(pt 448 168)
-	(pt 464 168)
 )
 (connector
 	(pt 464 168)
@@ -1846,6 +1782,26 @@ applicable agreement for further details.
 (connector
 	(pt 752 1560)
 	(pt 760 1560)
+)
+(connector
+	(text "e3" (rect 456 152 467 164)(font "Arial" ))
+	(pt 448 168)
+	(pt 464 168)
+)
+(connector
+	(text "e2" (rect 467 120 478 132)(font "Arial" ))
+	(pt 448 136)
+	(pt 480 136)
+)
+(connector
+	(text "e1" (rect 471 88 482 100)(font "Arial" ))
+	(pt 448 104)
+	(pt 496 104)
+)
+(connector
+	(text "e0" (rect 479 56 490 68)(font "Arial" ))
+	(pt 448 72)
+	(pt 512 72)
 )
 (junction (pt 632 216))
 (junction (pt 616 232))
