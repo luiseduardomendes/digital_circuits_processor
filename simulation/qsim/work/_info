@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\aluno\Downloads\digital_circuits_processor-master\digital_circuits_processor-master\simulation\qsim
+vfinal_work
+Z1 ID<fV9TcSF6gXeG9M>HD:e0
+Z2 V6A4@SOoC1dSEb9X2VO1TU0
+Z3 dE:\GitHub\digital_circuits_processor\simulation\qsim
+Z4 w1657941033
+Z5 8final_work.vo
+Z6 Ffinal_work.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|final_work.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 dN[`Xz29@f`=^z0L?PaA<0
+!s85 0
+Z11 !s108 1657941033.704000
+Z12 !s107 final_work.vo|
+!s101 -O0
+vfinal_work_vlg_check_tst
+!i10b 1
+Z13 !s100 DT[IMfoOaS^I[>6DbBJiC1
+Z14 I:f@9SR>M0O?MFdC0k2YZf0
+Z15 VieOg=^I;QdLTKk7VgbW:P0
+R3
+Z16 w1657941031
+Z17 8alu_test.vwf.vt
+Z18 Falu_test.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z19 !s108 1657941033.803000
+Z20 !s107 alu_test.vwf.vt|
+Z21 !s90 -work|work|alu_test.vwf.vt|
+!s101 -O0
+R9
+vfinal_work_vlg_sample_tst
+!i10b 1
+Z22 !s100 A2oT92hDBY@Dj`^Rbcj:L2
+Z23 IVEmQ>D9[@Jn1O1OiieY^J2
+Z24 VkBl3=:cYI3P:Y46>HZ7Xz2
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vfinal_work_vlg_vec_tst
+!i10b 1
+Z25 !s100 1L30]3h`<dBK7SEo`VHTR1
+Z26 IJOHg7:fJT=gW:LiC>8cTW3
+Z27 V3SZ]Uc_93M?N5:0Y9>Q1V2
+R3
+R16
+R17
+R18
+Z28 L0 416
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9

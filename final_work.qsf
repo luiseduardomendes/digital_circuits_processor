@@ -43,8 +43,8 @@ set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:19:52  JULY 04, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name BDF_FILE mux2x1.bdf
 set_global_assignment -name BDF_FILE mux4x1.bdf
 set_global_assignment -name BDF_FILE mux16x1.bdf
@@ -64,3 +64,22 @@ set_global_assignment -name BDF_FILE ahmes_alu.bdf
 set_global_assignment -name BDF_FILE mux2x1_8bits.bdf
 set_global_assignment -name BDF_FILE decod2x4.bdf
 set_global_assignment -name BDF_FILE Ahmes.bdf
+set_global_assignment -name BDF_FILE final_work.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "E:/GitHub/digital_circuits_processor/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name BDF_FILE shl.bdf
+set_global_assignment -name BDF_FILE gnd8bits.bdf
+set_global_assignment -name BDF_FILE and8_1.bdf
+set_global_assignment -name BDF_FILE zero_check.bdf
+set_global_assignment -name BDF_FILE check_overflow.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE alu_test.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
