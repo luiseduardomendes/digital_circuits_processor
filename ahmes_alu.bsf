@@ -61,22 +61,22 @@ applicable agreement for further details.
 	(port
 		(pt 144 64)
 		(output)
-		(text "negative" (rect 0 0 48 14)(font "Arial" (font_size 8)))
-		(text "negative" (rect 75 59 123 73)(font "Arial" (font_size 8)))
+		(text "borrow" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "borrow" (rect 81 59 123 73)(font "Arial" (font_size 8)))
 		(line (pt 144 64)(pt 128 64))
 	)
 	(port
 		(pt 144 80)
 		(output)
-		(text "borrow" (rect 0 0 42 14)(font "Arial" (font_size 8)))
-		(text "borrow" (rect 81 75 123 89)(font "Arial" (font_size 8)))
+		(text "zero" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "zero" (rect 98 75 123 89)(font "Arial" (font_size 8)))
 		(line (pt 144 80)(pt 128 80))
 	)
 	(port
 		(pt 144 96)
 		(output)
-		(text "zero" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "zero" (rect 98 91 123 105)(font "Arial" (font_size 8)))
+		(text "negative" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "negative" (rect 75 91 123 105)(font "Arial" (font_size 8)))
 		(line (pt 144 96)(pt 128 96))
 	)
 	(port
