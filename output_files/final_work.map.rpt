@@ -1,5 +1,5 @@
 Analysis & Synthesis report for final_work
-Mon Sep 05 21:25:40 2022
+Mon Sep 05 22:29:22 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,13 +41,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Sep 05 21:25:40 2022      ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 05 22:29:22 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; final_work                                 ;
 ; Top-level Entity Name              ; final_work                                 ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 24                                         ;
-;     Total combinational functions  ; 24                                         ;
+; Total logic elements               ; 32                                         ;
+;     Total combinational functions  ; 32                                         ;
 ;     Dedicated logic registers      ; 3                                          ;
 ; Total registers                    ; 3                                          ;
 ; Total pins                         ; 18                                         ;
@@ -183,9 +183,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O pins                 ; 18                                                                 ;
 ; DSP block 9-bit elements ; 0                                                                  ;
 ; Maximum fan-out node     ; control_unit:inst|counter_8_bits:inst2|generic_counter:inst4|inst5 ;
-; Maximum fan-out          ; 11                                                                 ;
-; Total fan-out            ; 118                                                                ;
-; Average fan-out          ; 1.87                                                               ;
+; Maximum fan-out          ; 14                                                                 ;
+; Total fan-out            ; 150                                                                ;
+; Average fan-out          ; 2.11                                                               ;
 +--------------------------+--------------------------------------------------------------------+
 
 
@@ -194,8 +194,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Library Name ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
-; |final_work                      ; 24 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 18   ; 0            ; |final_work                                                                                       ; work         ;
-;    |control_unit:inst|           ; 24 (18)           ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst                                                                     ; work         ;
+; |final_work                      ; 32 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 18   ; 0            ; |final_work                                                                                       ; work         ;
+;    |control_unit:inst|           ; 32 (23)           ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst                                                                     ; work         ;
 ;       |counter_8_bits:inst2|     ; 4 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2                                                ; work         ;
 ;          |generic_counter:inst3| ; 1 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst3                          ; work         ;
 ;             |mux4x1:inst|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst              ; work         ;
@@ -204,8 +204,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux4x1:inst|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst4|mux4x1:inst              ; work         ;
 ;                |mux2x1:inst2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst4|mux4x1:inst|mux2x1:inst2 ; work         ;
 ;          |generic_counter:inst|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst                           ; work         ;
-;       |decod3x8:inst|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|decod3x8:inst                                                       ; work         ;
-;       |decod4x16:inst3|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|decod4x16:inst3                                                     ; work         ;
+;       |decod3x8:inst|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|decod3x8:inst                                                       ; work         ;
+;       |decod4x16:inst3|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|decod4x16:inst3                                                     ; work         ;
 +----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -240,7 +240,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Mon Sep 05 21:25:38 2022
+    Info: Processing started: Mon Sep 05 22:29:20 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final_work -c final_work
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mux2x1.bdf
@@ -327,8 +327,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
 Info (12127): Elaborating entity "final_work" for the top level hierarchy
 Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:inst"
 Info (12128): Elaborating entity "decod3x8" for hierarchy "control_unit:inst|decod3x8:inst"
-Warning (275043): Pin "s5" is missing source
-Warning (275008): Primitive "AND3" of instance "inst55" not used
 Warning (12125): Using design file counter_8_bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: counter_8_bits
 Info (12128): Elaborating entity "counter_8_bits" for hierarchy "control_unit:inst|counter_8_bits:inst2"
@@ -338,18 +336,16 @@ Info (12128): Elaborating entity "generic_counter" for hierarchy "control_unit:i
 Info (12128): Elaborating entity "mux4x1" for hierarchy "control_unit:inst|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst"
 Info (12128): Elaborating entity "mux2x1" for hierarchy "control_unit:inst|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst|mux2x1:inst2"
 Info (12128): Elaborating entity "decod4x16" for hierarchy "control_unit:inst|decod4x16:inst3"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "cg_pc" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 42 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 24 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4674 megabytes
-    Info: Processing ended: Mon Sep 05 21:25:40 2022
+    Info (21061): Implemented 32 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4667 megabytes
+    Info: Processing ended: Mon Sep 05 22:29:22 2022
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
