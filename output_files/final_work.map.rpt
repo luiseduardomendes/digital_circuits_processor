@@ -1,5 +1,5 @@
 Analysis & Synthesis report for final_work
-Tue Jul 26 10:55:30 2022
+Mon Sep 05 21:25:40 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -14,9 +14,8 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +41,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jul 26 10:55:30 2022      ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 05 21:25:40 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; final_work                                 ;
 ; Top-level Entity Name              ; final_work                                 ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 66                                         ;
-;     Total combinational functions  ; 66                                         ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 32                                         ;
+; Total logic elements               ; 24                                         ;
+;     Total combinational functions  ; 24                                         ;
+;     Dedicated logic registers      ; 3                                          ;
+; Total registers                    ; 3                                          ;
+; Total pins                         ; 18                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -160,106 +159,54 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
-; mux2x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/mux2x1.bdf         ;         ;
-; mux4x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/mux4x1.bdf         ;         ;
-; mux8x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/mux8x1.bdf         ;         ;
-; and_8bits.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/and_8bits.bdf      ;         ;
-; or_8bits.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/or_8bits.bdf       ;         ;
-; not_8bits.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/not_8bits.bdf      ;         ;
-; mux4x1_8bits.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/mux4x1_8bits.bdf   ;         ;
-; mux8x1_8bits.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/mux8x1_8bits.bdf   ;         ;
-; ahmes_alu.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/ahmes_alu.bdf      ;         ;
-; mux2x1_8bits.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/mux2x1_8bits.bdf   ;         ;
-; zero_check.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/zero_check.bdf     ;         ;
-; shl.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/shl.bdf            ;         ;
-; gnd_8bits.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/gnd_8bits.bdf      ;         ;
-; final_work.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/final_work.bdf     ;         ;
-; overflow_check.bdf               ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/overflow_check.bdf ;         ;
-; carry_check.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/carry_check.bdf    ;         ;
-; 8_bits_adder.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/8_bits_adder.bdf   ;         ;
-; full_adder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/full_adder.bdf     ;         ;
-; half_adder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/dudup/OneDrive/햞ea de Trabalho/digital_circuits_processor1/half_adder.bdf     ;         ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------+---------+
+; mux2x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux2x1.bdf          ;         ;
+; mux4x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux4x1.bdf          ;         ;
+; decod3x8.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/decod3x8.bdf        ;         ;
+; decod4x16.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/decod4x16.bdf       ;         ;
+; final_work.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/final_work.bdf      ;         ;
+; control_unit.bdf                 ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/control_unit.bdf    ;         ;
+; counter_8_bits.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/counter_8_bits.bdf  ;         ;
+; generic_counter.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/generic_counter.bdf ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------+---------+
 
 
-+---------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary ;
-+--------------------------+------------------+
-; Resource                 ; Usage            ;
-+--------------------------+------------------+
-; I/O pins                 ; 32               ;
-; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; k[1]~input       ;
-; Maximum fan-out          ; 36               ;
-; Total fan-out            ; 285              ;
-; Average fan-out          ; 2.19             ;
-+--------------------------+------------------+
++-----------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                   ;
++--------------------------+--------------------------------------------------------------------+
+; Resource                 ; Usage                                                              ;
++--------------------------+--------------------------------------------------------------------+
+; I/O pins                 ; 18                                                                 ;
+; DSP block 9-bit elements ; 0                                                                  ;
+; Maximum fan-out node     ; control_unit:inst|counter_8_bits:inst2|generic_counter:inst4|inst5 ;
+; Maximum fan-out          ; 11                                                                 ;
+; Total fan-out            ; 118                                                                ;
+; Average fan-out          ; 1.87                                                               ;
++--------------------------+--------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                    ;
-+--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Library Name ;
-+--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
-; |final_work                    ; 66 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 32   ; 0            ; |final_work                                                                    ; work         ;
-;    |ahmes_alu:inst|            ; 66 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst                                                     ; work         ;
-;       |8_bits_adder:inst|      ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst                                   ; work         ;
-;          |full_adder:inst1|    ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst1                  ; work         ;
-;             |half_adder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst1|half_adder:inst1 ; work         ;
-;          |full_adder:inst2|    ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst2                  ; work         ;
-;             |half_adder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst2|half_adder:inst1 ; work         ;
-;          |full_adder:inst3|    ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst3                  ; work         ;
-;             |half_adder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst3|half_adder:inst1 ; work         ;
-;          |full_adder:inst4|    ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst4                  ; work         ;
-;             |half_adder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst4|half_adder:inst1 ; work         ;
-;          |full_adder:inst5|    ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst5                  ; work         ;
-;             |half_adder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst5|half_adder:inst1 ; work         ;
-;          |full_adder:inst6|    ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst6                  ; work         ;
-;             |half_adder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst6|half_adder:inst1 ; work         ;
-;          |full_adder:inst7|    ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst7                  ; work         ;
-;             |half_adder:inst1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst7|half_adder:inst1 ; work         ;
-;          |full_adder:inst8|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|8_bits_adder:inst|full_adder:inst8                  ; work         ;
-;       |carry_check:inst6|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|carry_check:inst6                                   ; work         ;
-;       |mux4x1_8bits:inst5|     ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5                                  ; work         ;
-;          |mux4x1:inst10|       ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst10                    ; work         ;
-;             |mux2x1:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst10|mux2x1:inst        ; work         ;
-;          |mux4x1:inst11|       ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst11                    ; work         ;
-;             |mux2x1:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst11|mux2x1:inst        ; work         ;
-;          |mux4x1:inst1|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst1                     ; work         ;
-;             |mux2x1:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst1|mux2x1:inst         ; work         ;
-;          |mux4x1:inst6|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst6                     ; work         ;
-;             |mux2x1:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst6|mux2x1:inst         ; work         ;
-;          |mux4x1:inst7|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst7                     ; work         ;
-;             |mux2x1:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst7|mux2x1:inst         ; work         ;
-;          |mux4x1:inst8|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst8                     ; work         ;
-;             |mux2x1:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst8|mux2x1:inst         ; work         ;
-;          |mux4x1:inst9|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst9                     ; work         ;
-;             |mux2x1:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst9|mux2x1:inst         ; work         ;
-;       |mux8x1_8bits:inst12|    ; 35 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12                                 ; work         ;
-;          |mux8x1:inst2|        ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst2                    ; work         ;
-;             |mux2x1:inst1|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst2|mux2x1:inst1       ; work         ;
-;          |mux8x1:inst3|        ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst3                    ; work         ;
-;             |mux2x1:inst1|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst3|mux2x1:inst1       ; work         ;
-;          |mux8x1:inst4|        ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst4                    ; work         ;
-;             |mux2x1:inst1|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst4|mux2x1:inst1       ; work         ;
-;          |mux8x1:inst5|        ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst5                    ; work         ;
-;             |mux2x1:inst1|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst5|mux2x1:inst1       ; work         ;
-;          |mux8x1:inst6|        ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst6                    ; work         ;
-;             |mux2x1:inst1|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst6|mux2x1:inst1       ; work         ;
-;          |mux8x1:inst7|        ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst7                    ; work         ;
-;             |mux2x1:inst1|     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst7|mux2x1:inst1       ; work         ;
-;          |mux8x1:inst8|        ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst8                    ; work         ;
-;             |mux2x1:inst1|     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst8|mux2x1:inst1       ; work         ;
-;          |mux8x1:inst|         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst                     ; work         ;
-;             |mux2x1:inst1|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst|mux2x1:inst1        ; work         ;
-;       |overflow_check:inst7|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|overflow_check:inst7                                ; work         ;
-;       |zero_check:inst24|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|ahmes_alu:inst|zero_check:inst24                                   ; work         ;
-+--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Library Name ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
+; |final_work                      ; 24 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 18   ; 0            ; |final_work                                                                                       ; work         ;
+;    |control_unit:inst|           ; 24 (18)           ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst                                                                     ; work         ;
+;       |counter_8_bits:inst2|     ; 4 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2                                                ; work         ;
+;          |generic_counter:inst3| ; 1 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst3                          ; work         ;
+;             |mux4x1:inst|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst              ; work         ;
+;                |mux2x1:inst2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst|mux2x1:inst2 ; work         ;
+;          |generic_counter:inst4| ; 2 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst4                          ; work         ;
+;             |mux4x1:inst|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst4|mux4x1:inst              ; work         ;
+;                |mux2x1:inst2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst4|mux4x1:inst|mux2x1:inst2 ; work         ;
+;          |generic_counter:inst|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|counter_8_bits:inst2|generic_counter:inst                           ; work         ;
+;       |decod3x8:inst|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|decod3x8:inst                                                       ; work         ;
+;       |decod4x16:inst3|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |final_work|control_unit:inst|decod4x16:inst3                                                     ; work         ;
++----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -268,23 +215,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 3     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 3     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
-; 7:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |final_work|ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst2|mux2x1:inst1|inst2 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -302,7 +240,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Jul 26 10:55:27 2022
+    Info: Processing started: Mon Sep 05 21:25:38 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final_work -c final_work
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mux2x1.bdf
@@ -357,43 +295,62 @@ Info (12021): Found 1 design units, including 1 entities, in source file carry_c
     Info (12023): Found entity 1: carry_check
 Info (12021): Found 1 design units, including 1 entities, in source file add_sub_neg.bdf
     Info (12023): Found entity 1: add_sub_neg
+Info (12021): Found 1 design units, including 1 entities, in source file negative_check.bdf
+    Info (12023): Found entity 1: negative_check
+Info (12021): Found 1 design units, including 1 entities, in source file borrow_check.bdf
+    Info (12023): Found entity 1: borrow_check
+Info (12021): Found 1 design units, including 1 entities, in source file latch_sr_e.bdf
+    Info (12023): Found entity 1: latch_SR_E
+Info (12021): Found 1 design units, including 1 entities, in source file latch_sr.bdf
+    Info (12023): Found entity 1: latch_SR
+Info (12021): Found 1 design units, including 1 entities, in source file latch_d.bdf
+    Info (12023): Found entity 1: latch_D
+Info (12021): Found 1 design units, including 1 entities, in source file flip_flop.bdf
+    Info (12023): Found entity 1: flip_flop
+Info (12021): Found 1 design units, including 1 entities, in source file xx.bdf
+    Info (12023): Found entity 1: xx
+Info (12021): Found 1 design units, including 1 entities, in source file latch_sr_sr.bdf
+    Info (12023): Found entity 1: latch_SR_sr
+Info (12021): Found 1 design units, including 1 entities, in source file latch_sr_e_sr.bdf
+    Info (12023): Found entity 1: latch_SR_E_sr
+Info (12021): Found 1 design units, including 1 entities, in source file latch_d_sr.bdf
+    Info (12023): Found entity 1: latch_D_sr
+Info (12021): Found 1 design units, including 1 entities, in source file flip_flop_sr.bdf
+    Info (12023): Found entity 1: flip_flop_sr
+Info (12021): Found 1 design units, including 1 entities, in source file flip_flop_e_sr.bdf
+    Info (12023): Found entity 1: flip_flop_E_sr
+Warning (12019): Can't analyze file -- file latch_with_reset/latch_SR.bdf is missing
+Info (12021): Found 1 design units, including 1 entities, in source file latch_sr_reset.bdf
+    Info (12023): Found entity 1: latch_SR_reset
+Info (12021): Found 1 design units, including 1 entities, in source file control_unit.bdf
+    Info (12023): Found entity 1: control_unit
 Info (12127): Elaborating entity "final_work" for the top level hierarchy
-Info (12128): Elaborating entity "ahmes_alu" for hierarchy "ahmes_alu:inst"
-Warning (275008): Primitive "NOT" of instance "inst8" not used
-Info (12128): Elaborating entity "carry_check" for hierarchy "ahmes_alu:inst|carry_check:inst6"
-Info (12128): Elaborating entity "shl" for hierarchy "ahmes_alu:inst|shl:inst13"
-Warning (12125): Using design file 8_bits_adder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: 8_bits_adder
-Info (12128): Elaborating entity "8_bits_adder" for hierarchy "ahmes_alu:inst|8_bits_adder:inst"
-Warning (12125): Using design file full_adder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: full_adder
-Info (12128): Elaborating entity "full_adder" for hierarchy "ahmes_alu:inst|8_bits_adder:inst|full_adder:inst7"
-Warning (12125): Using design file half_adder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: half_adder
-Info (12128): Elaborating entity "half_adder" for hierarchy "ahmes_alu:inst|8_bits_adder:inst|full_adder:inst7|half_adder:inst1"
-Info (12128): Elaborating entity "mux2x1_8bits" for hierarchy "ahmes_alu:inst|mux2x1_8bits:inst4"
-Info (12128): Elaborating entity "mux2x1" for hierarchy "ahmes_alu:inst|mux2x1_8bits:inst4|mux2x1:inst"
-Info (12128): Elaborating entity "gnd_8bits" for hierarchy "ahmes_alu:inst|gnd_8bits:inst27"
-Info (12128): Elaborating entity "mux4x1_8bits" for hierarchy "ahmes_alu:inst|mux4x1_8bits:inst5"
-Info (12128): Elaborating entity "mux4x1" for hierarchy "ahmes_alu:inst|mux4x1_8bits:inst5|mux4x1:inst6"
-Info (12128): Elaborating entity "not_8bits" for hierarchy "ahmes_alu:inst|not_8bits:inst9"
-Info (12128): Elaborating entity "zero_check" for hierarchy "ahmes_alu:inst|zero_check:inst24"
-Info (12128): Elaborating entity "mux8x1_8bits" for hierarchy "ahmes_alu:inst|mux8x1_8bits:inst12"
-Info (12128): Elaborating entity "mux8x1" for hierarchy "ahmes_alu:inst|mux8x1_8bits:inst12|mux8x1:inst2"
-Info (12128): Elaborating entity "and_8bits" for hierarchy "ahmes_alu:inst|and_8bits:inst1"
-Info (12128): Elaborating entity "or_8bits" for hierarchy "ahmes_alu:inst|or_8bits:inst2"
-Info (12128): Elaborating entity "overflow_check" for hierarchy "ahmes_alu:inst|overflow_check:inst7"
+Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:inst"
+Info (12128): Elaborating entity "decod3x8" for hierarchy "control_unit:inst|decod3x8:inst"
+Warning (275043): Pin "s5" is missing source
+Warning (275008): Primitive "AND3" of instance "inst55" not used
+Warning (12125): Using design file counter_8_bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: counter_8_bits
+Info (12128): Elaborating entity "counter_8_bits" for hierarchy "control_unit:inst|counter_8_bits:inst2"
+Warning (12125): Using design file generic_counter.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: generic_counter
+Info (12128): Elaborating entity "generic_counter" for hierarchy "control_unit:inst|counter_8_bits:inst2|generic_counter:inst3"
+Info (12128): Elaborating entity "mux4x1" for hierarchy "control_unit:inst|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst"
+Info (12128): Elaborating entity "mux2x1" for hierarchy "control_unit:inst|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst|mux2x1:inst2"
+Info (12128): Elaborating entity "decod4x16" for hierarchy "control_unit:inst|decod4x16:inst3"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "cg_pc" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 98 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 19 input pins
-    Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 66 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+Info (21057): Implemented 42 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 24 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
     Info: Peak virtual memory: 4674 megabytes
-    Info: Processing ended: Tue Jul 26 10:55:30 2022
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Mon Sep 05 21:25:40 2022
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -2,14 +2,20 @@ library verilog;
 use verilog.vl_types.all;
 entity final_work is
     port(
-        bf              : out    vl_logic;
-        a               : in     vl_logic_vector(7 downto 0);
-        b               : in     vl_logic_vector(7 downto 0);
-        k               : in     vl_logic_vector(2 downto 0);
-        zf              : out    vl_logic;
-        nf              : out    vl_logic;
-        vf              : out    vl_logic;
-        cf              : out    vl_logic;
-        s               : out    vl_logic_vector(7 downto 0)
+        cf_rem          : out    vl_logic;
+        Ck              : in     vl_logic;
+        Rst             : in     vl_logic;
+        N               : in     vl_logic;
+        Z               : in     vl_logic;
+        instr           : in     vl_logic_vector(3 downto 0);
+        ctrl_rem        : out    vl_logic;
+        inc_pc          : out    vl_logic;
+        cg_ac           : out    vl_logic;
+        cg_ri           : out    vl_logic;
+        cg_pc           : out    vl_logic;
+        cg_rdm          : out    vl_logic;
+        read            : out    vl_logic;
+        cg_nz           : out    vl_logic;
+        write           : out    vl_logic
     );
 end final_work;
