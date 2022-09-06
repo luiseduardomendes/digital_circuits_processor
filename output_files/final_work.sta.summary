@@ -2,249 +2,249 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
-Slack : -3.522
-TNS   : -37.048
-
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
-Slack : -3.419
-TNS   : -35.915
-
 Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst20|inst'
-Slack : -3.279
-TNS   : -34.375
+Slack : -8.821
+TNS   : -222.484
 
 Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
-Slack : -3.182
-TNS   : -33.308
-
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
-Slack : -3.083
-TNS   : -32.219
+Slack : -8.757
+TNS   : -220.308
 
 Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
-Slack : -2.991
-TNS   : -31.212
+Slack : -8.751
+TNS   : -220.104
+
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
+Slack : -8.477
+TNS   : -210.788
+
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
+Slack : -8.474
+TNS   : -210.686
 
 Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst17|inst'
-Slack : -2.879
-TNS   : -29.975
+Slack : -8.465
+TNS   : -210.380
+
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
+Slack : -8.273
+TNS   : -203.858
 
 Type  : Slow 1200mV 85C Model Setup 'f[0]'
-Slack : -1.555
-TNS   : -15.411
+Slack : -7.136
+TNS   : -165.194
+
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
+Slack : 0.033
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst14|inst'
-Slack : -0.076
-TNS   : -0.076
-
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst13|inst'
-Slack : 0.007
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst4|inst'
-Slack : 0.038
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
-Slack : 0.046
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst8|inst'
 Slack : 0.052
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst1|inst'
-Slack : 0.101
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : 0.079
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst16|inst'
-Slack : 0.120
+Slack : 0.084
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst2|inst'
-Slack : 0.146
+Slack : 0.085
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst5|inst'
-Slack : 0.170
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst8|inst'
+Slack : 0.091
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst7|inst'
-Slack : 0.181
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
+Slack : 0.093
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst4|inst'
+Slack : 0.103
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst1|inst'
+Slack : 0.110
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst3|inst'
-Slack : 0.183
+Slack : 0.177
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst9|inst'
-Slack : 0.193
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst13|inst'
+Slack : 0.182
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
-Slack : 0.197
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst5|inst'
+Slack : 0.186
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst15|inst'
-Slack : 0.208
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst7|inst'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
+Slack : 0.209
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst9|inst'
+Slack : 0.209
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst|inst'
-Slack : 0.208
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
-Slack : 0.258
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : 0.263
+Slack : 0.211
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst12|inst'
-Slack : 0.285
+Slack : 0.259
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'f[0]'
-Slack : -1.416
-TNS   : -15.570
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst17|inst'
-Slack : -0.447
-TNS   : -4.911
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
-Slack : -0.329
-TNS   : -3.613
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
-Slack : -0.260
-TNS   : -2.854
-
-Type  : Slow 1200mV 85C Model Hold 'clock'
-Slack : -0.224
-TNS   : -0.224
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
-Slack : -0.132
-TNS   : -1.446
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst12|inst'
-Slack : -0.091
-TNS   : -0.091
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
-Slack : -0.047
-TNS   : -0.047
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst1|inst'
-Slack : -0.046
-TNS   : -0.046
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst20|inst'
-Slack : -0.028
-TNS   : -0.302
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst2|inst'
-Slack : -0.001
-TNS   : -0.001
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
-Slack : 0.000
-TNS   : 0.000
+Slack : -1.282
+TNS   : -11.746
 
 Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
-Slack : 0.001
-TNS   : 0.000
+Slack : -0.427
+TNS   : -3.353
 
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst3|inst'
-Slack : 0.001
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst17|inst'
+Slack : -0.185
+TNS   : -1.424
 
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst8|inst'
-Slack : 0.010
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
+Slack : -0.152
+TNS   : -1.153
 
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
-Slack : 0.016
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
+Slack : -0.149
+TNS   : -1.153
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst20|inst'
+Slack : -0.141
+TNS   : -0.141
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst12|inst'
+Slack : -0.057
+TNS   : -0.057
 
 Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst4|inst'
-Slack : 0.017
-TNS   : 0.000
+Slack : -0.021
+TNS   : -0.021
 
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst15|inst'
-Slack : 0.020
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
+Slack : -0.020
+TNS   : -0.020
 
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst|inst'
-Slack : 0.020
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst16|inst'
-Slack : 0.028
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
-Slack : 0.032
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst9|inst'
-Slack : 0.036
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst7|inst'
-Slack : 0.050
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
+Slack : -0.016
+TNS   : -0.016
 
 Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst5|inst'
-Slack : 0.060
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst13|inst'
-Slack : 0.092
+Slack : 0.009
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst14|inst'
-Slack : 0.094
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst|inst'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst9|inst'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
+Slack : 0.027
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst7|inst'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst8|inst'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst15|inst'
+Slack : 0.035
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst16|inst'
+Slack : 0.045
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst13|inst'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst1|inst'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst3|inst'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
+Slack : 0.062
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst2|inst'
+Slack : 0.078
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'f[0]'
 Slack : -3.000
-TNS   : -33.002
+TNS   : -114.823
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
 TNS   : -4.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst17|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst20|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
 Slack : -1.000
@@ -314,249 +314,249 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
-Slack : -3.184
-TNS   : -33.444
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
-Slack : -3.095
-TNS   : -32.465
-
 Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst20|inst'
-Slack : -2.970
-TNS   : -31.090
+Slack : -7.910
+TNS   : -201.006
 
 Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
-Slack : -2.884
-TNS   : -30.144
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
-Slack : -2.788
-TNS   : -29.088
+Slack : -7.862
+TNS   : -199.374
 
 Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
-Slack : -2.716
-TNS   : -28.296
+Slack : -7.857
+TNS   : -199.204
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
+Slack : -7.620
+TNS   : -191.146
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
+Slack : -7.618
+TNS   : -191.078
 
 Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst17|inst'
-Slack : -2.618
-TNS   : -27.218
+Slack : -7.585
+TNS   : -189.956
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
+Slack : -7.431
+TNS   : -184.720
 
 Type  : Slow 1200mV 0C Model Setup 'f[0]'
-Slack : -1.284
-TNS   : -12.544
+Slack : -6.274
+TNS   : -145.382
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
+Slack : 0.100
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst14|inst'
-Slack : 0.013
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst13|inst'
-Slack : 0.062
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst4|inst'
-Slack : 0.105
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
-Slack : 0.112
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst8|inst'
 Slack : 0.118
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst1|inst'
-Slack : 0.164
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst16|inst'
+Slack : 0.129
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst16|inst'
-Slack : 0.167
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
+Slack : 0.149
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst2|inst'
-Slack : 0.194
+Slack : 0.152
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst5|inst'
-Slack : 0.214
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst8|inst'
+Slack : 0.154
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst3|inst'
-Slack : 0.217
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst1|inst'
+Slack : 0.170
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst7|inst'
-Slack : 0.221
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst9|inst'
-Slack : 0.226
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
-Slack : 0.231
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst15|inst'
-Slack : 0.241
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst|inst'
-Slack : 0.241
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
-Slack : 0.300
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst12|inst'
-Slack : 0.323
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst4|inst'
+Slack : 0.181
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : 0.326
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst3|inst'
+Slack : 0.218
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst13|inst'
+Slack : 0.222
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst5|inst'
+Slack : 0.224
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst15|inst'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst7|inst'
+Slack : 0.228
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
+Slack : 0.241
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst9|inst'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst|inst'
+Slack : 0.244
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst12|inst'
+Slack : 0.302
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'f[0]'
-Slack : -1.301
-TNS   : -14.295
+Slack : -1.171
+TNS   : -10.733
+
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
+Slack : -0.379
+TNS   : -2.972
 
 Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst17|inst'
-Slack : -0.405
-TNS   : -4.439
-
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
-Slack : -0.300
-TNS   : -3.292
-
-Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : -0.262
-TNS   : -0.262
-
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
-Slack : -0.244
-TNS   : -2.668
-
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
-Slack : -0.125
-TNS   : -1.359
-
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst12|inst'
-Slack : -0.106
-TNS   : -0.106
-
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst1|inst'
-Slack : -0.068
-TNS   : -0.068
-
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
-Slack : -0.068
-TNS   : -0.068
+Slack : -0.180
+TNS   : -1.413
 
 Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst20|inst'
-Slack : -0.034
-TNS   : -0.358
+Slack : -0.153
+TNS   : -0.153
 
 Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
-Slack : -0.026
-TNS   : -0.026
+Slack : -0.129
+TNS   : -1.012
 
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst8|inst'
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
+Slack : -0.125
+TNS   : -0.940
+
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst12|inst'
+Slack : -0.076
+TNS   : -0.076
+
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst4|inst'
+Slack : -0.053
+TNS   : -0.053
+
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
+Slack : -0.047
+TNS   : -0.047
+
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
+Slack : -0.034
+TNS   : -0.034
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : -0.024
+TNS   : -0.024
+
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst14|inst'
 Slack : -0.018
 TNS   : -0.018
 
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
-Slack : -0.012
-TNS   : -0.012
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
+Slack : -0.001
+TNS   : -0.001
 
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
-Slack : -0.012
-TNS   : -0.012
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst5|inst'
+Slack : 0.000
+TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst3|inst'
-Slack : -0.011
-TNS   : -0.011
-
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst2|inst'
-Slack : -0.010
-TNS   : -0.010
-
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst4|inst'
-Slack : -0.009
-TNS   : -0.009
-
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst16|inst'
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst8|inst'
 Slack : 0.005
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst15|inst'
-Slack : 0.008
-TNS   : 0.000
-
 Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst|inst'
-Slack : 0.008
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
-Slack : 0.018
+Slack : 0.005
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst9|inst'
-Slack : 0.022
+Slack : 0.007
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst14|inst'
-Slack : 0.047
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
+Slack : 0.008
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst5|inst'
-Slack : 0.051
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst1|inst'
+Slack : 0.020
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst7|inst'
-Slack : 0.052
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst15|inst'
+Slack : 0.022
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst16|inst'
+Slack : 0.023
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst2|inst'
+Slack : 0.043
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst13|inst'
-Slack : 0.069
+Slack : 0.051
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst3|inst'
+Slack : 0.054
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'f[0]'
 Slack : -3.000
-TNS   : -28.746
+TNS   : -102.370
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
 TNS   : -4.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst17|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst20|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
-Slack : -1.000
-TNS   : -12.000
+Slack : -2.174
+TNS   : -36.174
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
 Slack : -1.000
@@ -626,249 +626,249 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:i
 Slack : -1.000
 TNS   : -1.000
 
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
-Slack : -2.055
-TNS   : -21.600
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
-Slack : -2.001
-TNS   : -21.006
-
 Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst20|inst'
-Slack : -1.919
-TNS   : -20.104
+Slack : -4.850
+TNS   : -126.377
 
 Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
-Slack : -1.867
-TNS   : -19.532
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
-Slack : -1.812
-TNS   : -18.927
+Slack : -4.810
+TNS   : -125.017
 
 Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
-Slack : -1.754
-TNS   : -18.289
+Slack : -4.808
+TNS   : -124.949
 
 Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst17|inst'
-Slack : -1.695
-TNS   : -17.640
+Slack : -4.664
+TNS   : -120.053
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
+Slack : -4.646
+TNS   : -119.441
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
+Slack : -4.637
+TNS   : -119.135
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
+Slack : -4.537
+TNS   : -115.735
 
 Type  : Fast 1200mV 0C Model Setup 'f[0]'
-Slack : -0.444
-TNS   : -4.019
+Slack : -3.395
+TNS   : -76.958
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
+Slack : 0.239
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst14|inst'
-Slack : 0.198
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst13|inst'
-Slack : 0.240
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst4|inst'
-Slack : 0.242
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
-Slack : 0.249
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst8|inst'
 Slack : 0.251
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst4|inst'
+Slack : 0.280
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst8|inst'
+Slack : 0.286
+TNS   : 0.000
+
 Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst1|inst'
-Slack : 0.278
+Slack : 0.287
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst16|inst'
-Slack : 0.288
+Slack : 0.290
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst2|inst'
-Slack : 0.301
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst5|inst'
-Slack : 0.340
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst7|inst'
-Slack : 0.340
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst3|inst'
-Slack : 0.348
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst9|inst'
-Slack : 0.353
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
-Slack : 0.360
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst15|inst'
-Slack : 0.366
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst|inst'
-Slack : 0.366
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
-Slack : 0.391
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
+Slack : 0.291
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : 0.394
+Slack : 0.309
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst2|inst'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst3|inst'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst13|inst'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst5|inst'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst15|inst'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst7|inst'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst9|inst'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst|inst'
+Slack : 0.369
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst12|inst'
-Slack : 0.403
+Slack : 0.392
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'f[0]'
-Slack : -0.896
-TNS   : -9.842
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst17|inst'
-Slack : -0.273
-TNS   : -3.012
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
-Slack : -0.209
-TNS   : -2.285
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
-Slack : -0.165
-TNS   : -1.801
-
-Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : -0.157
-TNS   : -0.157
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
-Slack : -0.094
-TNS   : -1.037
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst12|inst'
-Slack : -0.057
-TNS   : -0.057
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
-Slack : -0.045
-TNS   : -0.045
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst20|inst'
-Slack : -0.038
-TNS   : -0.404
+Slack : -0.838
+TNS   : -7.791
 
 Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
-Slack : -0.031
-TNS   : -0.031
+Slack : -0.267
+TNS   : -2.127
 
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst1|inst'
-Slack : -0.024
-TNS   : -0.024
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst15|inst'
-Slack : -0.011
-TNS   : -0.011
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst|inst'
-Slack : -0.011
-TNS   : -0.011
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst3|inst'
-Slack : -0.007
-TNS   : -0.007
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
-Slack : -0.005
-TNS   : -0.005
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
+Slack : -0.125
+TNS   : -0.958
 
 Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
-Slack : -0.005
-TNS   : -0.005
+Slack : -0.115
+TNS   : -0.900
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst17|inst'
+Slack : -0.111
+TNS   : -0.859
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst20|inst'
+Slack : -0.086
+TNS   : -0.086
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst12|inst'
+Slack : -0.049
+TNS   : -0.049
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
+Slack : -0.015
+TNS   : -0.015
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst|inst'
+Slack : -0.014
+TNS   : -0.014
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst11|inst'
+Slack : -0.012
+TNS   : -0.012
 
 Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst9|inst'
-Slack : 0.001
+Slack : -0.012
+TNS   : -0.012
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
+Slack : -0.008
+TNS   : -0.008
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst5|inst'
+Slack : -0.002
+TNS   : -0.002
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
+Slack : 0.000
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst7|inst'
-Slack : 0.003
+Slack : 0.000
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst5|inst'
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst15|inst'
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst13|inst'
+Slack : 0.002
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst3|inst'
 Slack : 0.004
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst2|inst'
-Slack : 0.005
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst4|inst'
+Slack : 0.004
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst8|inst'
 Slack : 0.009
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
-Slack : 0.012
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst4|inst'
-Slack : 0.012
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst14|inst'
+Slack : 0.010
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst16|inst'
-Slack : 0.026
+Slack : 0.010
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst14|inst'
-Slack : 0.039
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst2|inst'
+Slack : 0.017
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst13|inst'
-Slack : 0.053
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst6|inst'
+Slack : 0.018
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst1|inst'
+Slack : 0.021
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'f[0]'
 Slack : -3.000
-TNS   : -24.772
+TNS   : -73.523
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -4.000
+TNS   : -4.055
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst17|inst'
 Slack : -1.000
-TNS   : -12.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst18|inst'
 Slack : -1.000
-TNS   : -12.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst19|inst'
 Slack : -1.000
-TNS   : -12.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst20|inst'
 Slack : -1.000
-TNS   : -12.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst21|inst'
 Slack : -1.000
-TNS   : -12.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst22|inst'
 Slack : -1.000
-TNS   : -12.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst23|inst'
 Slack : -1.000
-TNS   : -12.000
+TNS   : -35.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Ahmes:inst|freq_div25_select:inst6|freq_div:inst10|inst'
 Slack : -1.000

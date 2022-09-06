@@ -168,5 +168,6 @@ set_location_assignment PIN_A19 -to pc1[2]
 set_location_assignment PIN_F15 -to pc1[1]
 set_location_assignment PIN_B18 -to pc1[0]
 set_global_assignment -name MIF_FILE final_work.mif
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name QIP_FILE RAM_1_port.qip
+set_global_assignment -name VHDL_FILE teste.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

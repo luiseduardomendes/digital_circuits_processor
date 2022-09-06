@@ -1434,6 +1434,13 @@ R => freq_div:inst24.R
 f[0] => mux8x1:inst25.c0
 f[1] => mux8x1:inst25.c1
 f[2] => mux8x1:inst25.c2
+display_3_[0] <= <GND>
+display_3_[1] <= <GND>
+display_3_[2] <= <GND>
+display_3_[3] <= <GND>
+display_3_[4] <= <GND>
+display_3_[5] <= <GND>
+display_3_[6] <= <GND>
 
 
 |final_work|Ahmes:inst|freq_div25_select:inst6|mux8x1:inst25
@@ -2309,6 +2316,667 @@ e => inst5.ENA
 e => inst6.ENA
 e => inst7.ENA
 e => inst1.ENA
+
+
+|final_work|Ahmes:inst|memoria:inst9
+entrada[0] => Mux0.IN263
+entrada[0] => Mux1.IN263
+entrada[0] => Mux2.IN263
+entrada[0] => Mux3.IN263
+entrada[0] => Mux4.IN263
+entrada[0] => Mux5.IN263
+entrada[0] => Mux6.IN263
+entrada[0] => Mux7.IN263
+entrada[1] => Mux0.IN262
+entrada[1] => Mux1.IN262
+entrada[1] => Mux2.IN262
+entrada[1] => Mux3.IN262
+entrada[1] => Mux4.IN262
+entrada[1] => Mux5.IN262
+entrada[1] => Mux6.IN262
+entrada[1] => Mux7.IN262
+entrada[2] => Mux0.IN261
+entrada[2] => Mux1.IN261
+entrada[2] => Mux2.IN261
+entrada[2] => Mux3.IN261
+entrada[2] => Mux4.IN261
+entrada[2] => Mux5.IN261
+entrada[2] => Mux6.IN261
+entrada[2] => Mux7.IN261
+entrada[3] => Mux0.IN260
+entrada[3] => Mux1.IN260
+entrada[3] => Mux2.IN260
+entrada[3] => Mux3.IN260
+entrada[3] => Mux4.IN260
+entrada[3] => Mux5.IN260
+entrada[3] => Mux6.IN260
+entrada[3] => Mux7.IN260
+entrada[4] => Mux0.IN259
+entrada[4] => Mux1.IN259
+entrada[4] => Mux2.IN259
+entrada[4] => Mux3.IN259
+entrada[4] => Mux4.IN259
+entrada[4] => Mux5.IN259
+entrada[4] => Mux6.IN259
+entrada[4] => Mux7.IN259
+entrada[5] => Mux0.IN258
+entrada[5] => Mux1.IN258
+entrada[5] => Mux2.IN258
+entrada[5] => Mux3.IN258
+entrada[5] => Mux4.IN258
+entrada[5] => Mux5.IN258
+entrada[5] => Mux6.IN258
+entrada[5] => Mux7.IN258
+entrada[6] => Mux0.IN257
+entrada[6] => Mux1.IN257
+entrada[6] => Mux2.IN257
+entrada[6] => Mux3.IN257
+entrada[6] => Mux4.IN257
+entrada[6] => Mux5.IN257
+entrada[6] => Mux6.IN257
+entrada[6] => Mux7.IN257
+entrada[7] => Mux0.IN256
+entrada[7] => Mux1.IN256
+entrada[7] => Mux2.IN256
+entrada[7] => Mux3.IN256
+entrada[7] => Mux4.IN256
+entrada[7] => Mux5.IN256
+entrada[7] => Mux6.IN256
+entrada[7] => Mux7.IN256
+saida[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_work|Ahmes:inst|reg_8_bits:REM
+q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+d[0] => inst.DATAIN
+d[1] => inst2.DATAIN
+d[2] => inst4.DATAIN
+d[3] => inst6.DATAIN
+d[4] => inst1.DATAIN
+d[5] => inst3.DATAIN
+d[6] => inst5.DATAIN
+d[7] => inst7.DATAIN
+ck => inst.CLK
+ck => inst2.CLK
+ck => inst3.CLK
+ck => inst4.CLK
+ck => inst5.CLK
+ck => inst6.CLK
+ck => inst7.CLK
+ck => inst1.CLK
+e => inst.ENA
+e => inst2.ENA
+e => inst3.ENA
+e => inst4.ENA
+e => inst5.ENA
+e => inst6.ENA
+e => inst7.ENA
+e => inst1.ENA
+
+
+|final_work|Ahmes:inst|mux2x1_8bits:inst3
+s[0] <= mux2x1:inst.s
+s[1] <= mux2x1:inst1.s
+s[2] <= mux2x1:inst2.s
+s[3] <= mux2x1:inst3.s
+s[4] <= mux2x1:inst4.s
+s[5] <= mux2x1:inst5.s
+s[6] <= mux2x1:inst6.s
+s[7] <= mux2x1:inst7.s
+a[0] => mux2x1:inst.e0
+a[1] => mux2x1:inst1.e0
+a[2] => mux2x1:inst2.e0
+a[3] => mux2x1:inst3.e0
+a[4] => mux2x1:inst4.e0
+a[5] => mux2x1:inst5.e0
+a[6] => mux2x1:inst6.e0
+a[7] => mux2x1:inst7.e0
+b[0] => mux2x1:inst.e1
+b[1] => mux2x1:inst1.e1
+b[2] => mux2x1:inst2.e1
+b[3] => mux2x1:inst3.e1
+b[4] => mux2x1:inst4.e1
+b[5] => mux2x1:inst5.e1
+b[6] => mux2x1:inst6.e1
+b[7] => mux2x1:inst7.e1
+c => mux2x1:inst.c
+c => mux2x1:inst1.c
+c => mux2x1:inst2.c
+c => mux2x1:inst3.c
+c => mux2x1:inst4.c
+c => mux2x1:inst5.c
+c => mux2x1:inst6.c
+c => mux2x1:inst7.c
+
+
+|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst3
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst4
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst5
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst6
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst7
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC
+Q[0] <= generic_counter:inst.Q
+Q[1] <= generic_counter:inst3.Q
+Q[2] <= generic_counter:inst4.Q
+Q[3] <= generic_counter:inst5.Q
+Q[4] <= generic_counter:inst7.Q
+Q[5] <= generic_counter:inst6.Q
+Q[6] <= generic_counter:inst8.Q
+Q[7] <= generic_counter:inst9.Q
+D[0] => generic_counter:inst.D
+D[1] => generic_counter:inst3.D
+D[2] => generic_counter:inst4.D
+D[3] => generic_counter:inst5.D
+D[4] => generic_counter:inst7.D
+D[5] => generic_counter:inst6.D
+D[6] => generic_counter:inst8.D
+D[7] => generic_counter:inst9.D
+c[0] => generic_counter:inst.Qa
+c[0] => generic_counter:inst.c0
+c[0] => generic_counter:inst3.c0
+c[0] => generic_counter:inst4.c0
+c[0] => generic_counter:inst5.c0
+c[0] => generic_counter:inst7.c0
+c[0] => generic_counter:inst6.c0
+c[0] => generic_counter:inst8.c0
+c[0] => generic_counter:inst9.c0
+c[1] => generic_counter:inst.c1
+c[1] => generic_counter:inst3.c1
+c[1] => generic_counter:inst4.c1
+c[1] => generic_counter:inst5.c1
+c[1] => generic_counter:inst7.c1
+c[1] => generic_counter:inst6.c1
+c[1] => generic_counter:inst8.c1
+c[1] => generic_counter:inst9.c1
+Ck => generic_counter:inst.Ck
+Ck => generic_counter:inst3.Ck
+Ck => generic_counter:inst4.Ck
+Ck => generic_counter:inst5.Ck
+Ck => generic_counter:inst7.Ck
+Ck => generic_counter:inst6.Ck
+Ck => generic_counter:inst8.Ck
+Ck => generic_counter:inst9.Ck
+R => generic_counter:inst.R
+R => generic_counter:inst3.R
+R => generic_counter:inst4.R
+R => generic_counter:inst5.R
+R => generic_counter:inst7.R
+R => generic_counter:inst6.R
+R => generic_counter:inst8.R
+R => generic_counter:inst9.R
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+R => inst7.IN0
+Ck => inst5.CLK
+sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+eand => inst1.IN0
+Qa => inst1.IN1
+Qa => inst3.IN0
+sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+eor => inst3.IN1
+D => mux4x1:inst.e3
+c0 => mux4x1:inst.c0
+c1 => mux4x1:inst.c1
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|mux4x1:inst
+s <= mux2x1:inst2.s
+e0 => mux2x1:inst.e0
+e1 => mux2x1:inst.e1
+c0 => mux2x1:inst.c
+c0 => mux2x1:inst1.c
+e2 => mux2x1:inst1.e0
+e3 => mux2x1:inst1.e1
+c1 => mux2x1:inst2.c
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|mux4x1:inst|mux2x1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|mux4x1:inst|mux2x1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|mux4x1:inst|mux2x1:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+R => inst7.IN0
+Ck => inst5.CLK
+sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+eand => inst1.IN0
+Qa => inst1.IN1
+Qa => inst3.IN0
+sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+eor => inst3.IN1
+D => mux4x1:inst.e3
+c0 => mux4x1:inst.c0
+c1 => mux4x1:inst.c1
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst
+s <= mux2x1:inst2.s
+e0 => mux2x1:inst.e0
+e1 => mux2x1:inst.e1
+c0 => mux2x1:inst.c
+c0 => mux2x1:inst1.c
+e2 => mux2x1:inst1.e0
+e3 => mux2x1:inst1.e1
+c1 => mux2x1:inst2.c
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst|mux2x1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst|mux2x1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst|mux2x1:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+R => inst7.IN0
+Ck => inst5.CLK
+sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+eand => inst1.IN0
+Qa => inst1.IN1
+Qa => inst3.IN0
+sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+eor => inst3.IN1
+D => mux4x1:inst.e3
+c0 => mux4x1:inst.c0
+c1 => mux4x1:inst.c1
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5|mux4x1:inst
+s <= mux2x1:inst2.s
+e0 => mux2x1:inst.e0
+e1 => mux2x1:inst.e1
+c0 => mux2x1:inst.c
+c0 => mux2x1:inst1.c
+e2 => mux2x1:inst1.e0
+e3 => mux2x1:inst1.e1
+c1 => mux2x1:inst2.c
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5|mux4x1:inst|mux2x1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5|mux4x1:inst|mux2x1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5|mux4x1:inst|mux2x1:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+R => inst7.IN0
+Ck => inst5.CLK
+sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+eand => inst1.IN0
+Qa => inst1.IN1
+Qa => inst3.IN0
+sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+eor => inst3.IN1
+D => mux4x1:inst.e3
+c0 => mux4x1:inst.c0
+c1 => mux4x1:inst.c1
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4|mux4x1:inst
+s <= mux2x1:inst2.s
+e0 => mux2x1:inst.e0
+e1 => mux2x1:inst.e1
+c0 => mux2x1:inst.c
+c0 => mux2x1:inst1.c
+e2 => mux2x1:inst1.e0
+e3 => mux2x1:inst1.e1
+c1 => mux2x1:inst2.c
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4|mux4x1:inst|mux2x1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4|mux4x1:inst|mux2x1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4|mux4x1:inst|mux2x1:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+R => inst7.IN0
+Ck => inst5.CLK
+sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+eand => inst1.IN0
+Qa => inst1.IN1
+Qa => inst3.IN0
+sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+eor => inst3.IN1
+D => mux4x1:inst.e3
+c0 => mux4x1:inst.c0
+c1 => mux4x1:inst.c1
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7|mux4x1:inst
+s <= mux2x1:inst2.s
+e0 => mux2x1:inst.e0
+e1 => mux2x1:inst.e1
+c0 => mux2x1:inst.c
+c0 => mux2x1:inst1.c
+e2 => mux2x1:inst1.e0
+e3 => mux2x1:inst1.e1
+c1 => mux2x1:inst2.c
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7|mux4x1:inst|mux2x1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7|mux4x1:inst|mux2x1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7|mux4x1:inst|mux2x1:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+R => inst7.IN0
+Ck => inst5.CLK
+sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+eand => inst1.IN0
+Qa => inst1.IN1
+Qa => inst3.IN0
+sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+eor => inst3.IN1
+D => mux4x1:inst.e3
+c0 => mux4x1:inst.c0
+c1 => mux4x1:inst.c1
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6|mux4x1:inst
+s <= mux2x1:inst2.s
+e0 => mux2x1:inst.e0
+e1 => mux2x1:inst.e1
+c0 => mux2x1:inst.c
+c0 => mux2x1:inst1.c
+e2 => mux2x1:inst1.e0
+e3 => mux2x1:inst1.e1
+c1 => mux2x1:inst2.c
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6|mux4x1:inst|mux2x1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6|mux4x1:inst|mux2x1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6|mux4x1:inst|mux2x1:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+R => inst7.IN0
+Ck => inst5.CLK
+sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+eand => inst1.IN0
+Qa => inst1.IN1
+Qa => inst3.IN0
+sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+eor => inst3.IN1
+D => mux4x1:inst.e3
+c0 => mux4x1:inst.c0
+c1 => mux4x1:inst.c1
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8|mux4x1:inst
+s <= mux2x1:inst2.s
+e0 => mux2x1:inst.e0
+e1 => mux2x1:inst.e1
+c0 => mux2x1:inst.c
+c0 => mux2x1:inst1.c
+e2 => mux2x1:inst1.e0
+e3 => mux2x1:inst1.e1
+c1 => mux2x1:inst2.c
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8|mux4x1:inst|mux2x1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8|mux4x1:inst|mux2x1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8|mux4x1:inst|mux2x1:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+R => inst7.IN0
+Ck => inst5.CLK
+sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+eand => inst1.IN0
+Qa => inst1.IN1
+Qa => inst3.IN0
+sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+eor => inst3.IN1
+D => mux4x1:inst.e3
+c0 => mux4x1:inst.c0
+c1 => mux4x1:inst.c1
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9|mux4x1:inst
+s <= mux2x1:inst2.s
+e0 => mux2x1:inst.e0
+e1 => mux2x1:inst.e1
+c0 => mux2x1:inst.c
+c0 => mux2x1:inst1.c
+e2 => mux2x1:inst1.e0
+e3 => mux2x1:inst1.e1
+c1 => mux2x1:inst2.c
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9|mux4x1:inst|mux2x1:inst2
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9|mux4x1:inst|mux2x1:inst
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
+
+
+|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9|mux4x1:inst|mux2x1:inst1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+c => inst1.IN0
+c => inst3.IN0
+e1 => inst1.IN1
+e0 => inst.IN0
 
 
 |final_work|Ahmes:inst|display_7_seg:inst2
@@ -3580,458 +4248,6 @@ sF <= inst21.DB_MAX_OUTPUT_PORT_TYPE
 s4 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|final_work|Ahmes:inst|counter_8_bits:PC
-Q[0] <= generic_counter:inst.Q
-Q[1] <= generic_counter:inst3.Q
-Q[2] <= generic_counter:inst4.Q
-Q[3] <= generic_counter:inst5.Q
-Q[4] <= generic_counter:inst7.Q
-Q[5] <= generic_counter:inst6.Q
-Q[6] <= generic_counter:inst8.Q
-Q[7] <= generic_counter:inst9.Q
-D[0] => generic_counter:inst.D
-D[1] => generic_counter:inst3.D
-D[2] => generic_counter:inst4.D
-D[3] => generic_counter:inst5.D
-D[4] => generic_counter:inst7.D
-D[5] => generic_counter:inst6.D
-D[6] => generic_counter:inst8.D
-D[7] => generic_counter:inst9.D
-c[0] => generic_counter:inst.Qa
-c[0] => generic_counter:inst.c0
-c[0] => generic_counter:inst3.c0
-c[0] => generic_counter:inst4.c0
-c[0] => generic_counter:inst5.c0
-c[0] => generic_counter:inst7.c0
-c[0] => generic_counter:inst6.c0
-c[0] => generic_counter:inst8.c0
-c[0] => generic_counter:inst9.c0
-c[1] => generic_counter:inst.c1
-c[1] => generic_counter:inst3.c1
-c[1] => generic_counter:inst4.c1
-c[1] => generic_counter:inst5.c1
-c[1] => generic_counter:inst7.c1
-c[1] => generic_counter:inst6.c1
-c[1] => generic_counter:inst8.c1
-c[1] => generic_counter:inst9.c1
-Ck => generic_counter:inst.Ck
-Ck => generic_counter:inst3.Ck
-Ck => generic_counter:inst4.Ck
-Ck => generic_counter:inst5.Ck
-Ck => generic_counter:inst7.Ck
-Ck => generic_counter:inst6.Ck
-Ck => generic_counter:inst8.Ck
-Ck => generic_counter:inst9.Ck
-R => generic_counter:inst.R
-R => generic_counter:inst3.R
-R => generic_counter:inst4.R
-R => generic_counter:inst5.R
-R => generic_counter:inst7.R
-R => generic_counter:inst6.R
-R => generic_counter:inst8.R
-R => generic_counter:inst9.R
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3
-Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-R => inst7.IN0
-Ck => inst5.CLK
-sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-eand => inst1.IN0
-Qa => inst1.IN1
-Qa => inst3.IN0
-sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-eor => inst3.IN1
-D => mux4x1:inst.e3
-c0 => mux4x1:inst.c0
-c1 => mux4x1:inst.c1
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|mux4x1:inst
-s <= mux2x1:inst2.s
-e0 => mux2x1:inst.e0
-e1 => mux2x1:inst.e1
-c0 => mux2x1:inst.c
-c0 => mux2x1:inst1.c
-e2 => mux2x1:inst1.e0
-e3 => mux2x1:inst1.e1
-c1 => mux2x1:inst2.c
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|mux4x1:inst|mux2x1:inst2
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|mux4x1:inst|mux2x1:inst
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|mux4x1:inst|mux2x1:inst1
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst
-Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-R => inst7.IN0
-Ck => inst5.CLK
-sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-eand => inst1.IN0
-Qa => inst1.IN1
-Qa => inst3.IN0
-sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-eor => inst3.IN1
-D => mux4x1:inst.e3
-c0 => mux4x1:inst.c0
-c1 => mux4x1:inst.c1
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst
-s <= mux2x1:inst2.s
-e0 => mux2x1:inst.e0
-e1 => mux2x1:inst.e1
-c0 => mux2x1:inst.c
-c0 => mux2x1:inst1.c
-e2 => mux2x1:inst1.e0
-e3 => mux2x1:inst1.e1
-c1 => mux2x1:inst2.c
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst|mux2x1:inst2
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst|mux2x1:inst
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst|mux2x1:inst1
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5
-Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-R => inst7.IN0
-Ck => inst5.CLK
-sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-eand => inst1.IN0
-Qa => inst1.IN1
-Qa => inst3.IN0
-sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-eor => inst3.IN1
-D => mux4x1:inst.e3
-c0 => mux4x1:inst.c0
-c1 => mux4x1:inst.c1
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5|mux4x1:inst
-s <= mux2x1:inst2.s
-e0 => mux2x1:inst.e0
-e1 => mux2x1:inst.e1
-c0 => mux2x1:inst.c
-c0 => mux2x1:inst1.c
-e2 => mux2x1:inst1.e0
-e3 => mux2x1:inst1.e1
-c1 => mux2x1:inst2.c
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5|mux4x1:inst|mux2x1:inst2
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5|mux4x1:inst|mux2x1:inst
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5|mux4x1:inst|mux2x1:inst1
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4
-Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-R => inst7.IN0
-Ck => inst5.CLK
-sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-eand => inst1.IN0
-Qa => inst1.IN1
-Qa => inst3.IN0
-sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-eor => inst3.IN1
-D => mux4x1:inst.e3
-c0 => mux4x1:inst.c0
-c1 => mux4x1:inst.c1
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4|mux4x1:inst
-s <= mux2x1:inst2.s
-e0 => mux2x1:inst.e0
-e1 => mux2x1:inst.e1
-c0 => mux2x1:inst.c
-c0 => mux2x1:inst1.c
-e2 => mux2x1:inst1.e0
-e3 => mux2x1:inst1.e1
-c1 => mux2x1:inst2.c
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4|mux4x1:inst|mux2x1:inst2
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4|mux4x1:inst|mux2x1:inst
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4|mux4x1:inst|mux2x1:inst1
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7
-Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-R => inst7.IN0
-Ck => inst5.CLK
-sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-eand => inst1.IN0
-Qa => inst1.IN1
-Qa => inst3.IN0
-sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-eor => inst3.IN1
-D => mux4x1:inst.e3
-c0 => mux4x1:inst.c0
-c1 => mux4x1:inst.c1
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7|mux4x1:inst
-s <= mux2x1:inst2.s
-e0 => mux2x1:inst.e0
-e1 => mux2x1:inst.e1
-c0 => mux2x1:inst.c
-c0 => mux2x1:inst1.c
-e2 => mux2x1:inst1.e0
-e3 => mux2x1:inst1.e1
-c1 => mux2x1:inst2.c
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7|mux4x1:inst|mux2x1:inst2
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7|mux4x1:inst|mux2x1:inst
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7|mux4x1:inst|mux2x1:inst1
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6
-Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-R => inst7.IN0
-Ck => inst5.CLK
-sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-eand => inst1.IN0
-Qa => inst1.IN1
-Qa => inst3.IN0
-sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-eor => inst3.IN1
-D => mux4x1:inst.e3
-c0 => mux4x1:inst.c0
-c1 => mux4x1:inst.c1
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6|mux4x1:inst
-s <= mux2x1:inst2.s
-e0 => mux2x1:inst.e0
-e1 => mux2x1:inst.e1
-c0 => mux2x1:inst.c
-c0 => mux2x1:inst1.c
-e2 => mux2x1:inst1.e0
-e3 => mux2x1:inst1.e1
-c1 => mux2x1:inst2.c
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6|mux4x1:inst|mux2x1:inst2
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6|mux4x1:inst|mux2x1:inst
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6|mux4x1:inst|mux2x1:inst1
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8
-Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-R => inst7.IN0
-Ck => inst5.CLK
-sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-eand => inst1.IN0
-Qa => inst1.IN1
-Qa => inst3.IN0
-sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-eor => inst3.IN1
-D => mux4x1:inst.e3
-c0 => mux4x1:inst.c0
-c1 => mux4x1:inst.c1
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8|mux4x1:inst
-s <= mux2x1:inst2.s
-e0 => mux2x1:inst.e0
-e1 => mux2x1:inst.e1
-c0 => mux2x1:inst.c
-c0 => mux2x1:inst1.c
-e2 => mux2x1:inst1.e0
-e3 => mux2x1:inst1.e1
-c1 => mux2x1:inst2.c
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8|mux4x1:inst|mux2x1:inst2
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8|mux4x1:inst|mux2x1:inst
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8|mux4x1:inst|mux2x1:inst1
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9
-Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-R => inst7.IN0
-Ck => inst5.CLK
-sand <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-eand => inst1.IN0
-Qa => inst1.IN1
-Qa => inst3.IN0
-sor <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-eor => inst3.IN1
-D => mux4x1:inst.e3
-c0 => mux4x1:inst.c0
-c1 => mux4x1:inst.c1
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9|mux4x1:inst
-s <= mux2x1:inst2.s
-e0 => mux2x1:inst.e0
-e1 => mux2x1:inst.e1
-c0 => mux2x1:inst.c
-c0 => mux2x1:inst1.c
-e2 => mux2x1:inst1.e0
-e3 => mux2x1:inst1.e1
-c1 => mux2x1:inst2.c
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9|mux4x1:inst|mux2x1:inst2
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9|mux4x1:inst|mux2x1:inst
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9|mux4x1:inst|mux2x1:inst1
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
 |final_work|Ahmes:inst|display_7_seg:inst4
 s[0] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 s[1] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
@@ -4453,139 +4669,5 @@ sD <= inst19.DB_MAX_OUTPUT_PORT_TYPE
 sE <= inst20.DB_MAX_OUTPUT_PORT_TYPE
 sF <= inst21.DB_MAX_OUTPUT_PORT_TYPE
 s4 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|final_work|Ahmes:inst|mux2x1_8bits:inst3
-s[0] <= mux2x1:inst.s
-s[1] <= mux2x1:inst1.s
-s[2] <= mux2x1:inst2.s
-s[3] <= mux2x1:inst3.s
-s[4] <= mux2x1:inst4.s
-s[5] <= mux2x1:inst5.s
-s[6] <= mux2x1:inst6.s
-s[7] <= mux2x1:inst7.s
-a[0] => mux2x1:inst.e0
-a[1] => mux2x1:inst1.e0
-a[2] => mux2x1:inst2.e0
-a[3] => mux2x1:inst3.e0
-a[4] => mux2x1:inst4.e0
-a[5] => mux2x1:inst5.e0
-a[6] => mux2x1:inst6.e0
-a[7] => mux2x1:inst7.e0
-b[0] => mux2x1:inst.e1
-b[1] => mux2x1:inst1.e1
-b[2] => mux2x1:inst2.e1
-b[3] => mux2x1:inst3.e1
-b[4] => mux2x1:inst4.e1
-b[5] => mux2x1:inst5.e1
-b[6] => mux2x1:inst6.e1
-b[7] => mux2x1:inst7.e1
-c => mux2x1:inst.c
-c => mux2x1:inst1.c
-c => mux2x1:inst2.c
-c => mux2x1:inst3.c
-c => mux2x1:inst4.c
-c => mux2x1:inst5.c
-c => mux2x1:inst6.c
-c => mux2x1:inst7.c
-
-
-|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst1
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst2
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst3
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst4
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst5
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst6
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst7
-s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-c => inst1.IN0
-c => inst3.IN0
-e1 => inst1.IN1
-e0 => inst.IN0
-
-
-|final_work|Ahmes:inst|reg_8_bits:REM
-q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-d[0] => inst.DATAIN
-d[1] => inst2.DATAIN
-d[2] => inst4.DATAIN
-d[3] => inst6.DATAIN
-d[4] => inst1.DATAIN
-d[5] => inst3.DATAIN
-d[6] => inst5.DATAIN
-d[7] => inst7.DATAIN
-ck => inst.CLK
-ck => inst2.CLK
-ck => inst3.CLK
-ck => inst4.CLK
-ck => inst5.CLK
-ck => inst6.CLK
-ck => inst7.CLK
-ck => inst1.CLK
-e => inst.ENA
-e => inst2.ENA
-e => inst3.ENA
-e => inst4.ENA
-e => inst5.ENA
-e => inst6.ENA
-e => inst7.ENA
-e => inst1.ENA
 
 

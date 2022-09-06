@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="final_work">
+		<CBX_INST_ENTRY INSTANCE_NAME="|final_work|Ahmes:inst|memoria:inst9|altsyncram:Mux7_rtl_0" CBX_FILE_NAME="altsyncram_lv01.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
