@@ -36,8 +36,8 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone IV GX"
-set_global_assignment -name DEVICE auto
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
 set_global_assignment -name TOP_LEVEL_ENTITY final_work
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:19:52  JULY 04, 2022"
@@ -125,7 +125,47 @@ set_global_assignment -name BDF_FILE latch_with_reset/latch_SR.bdf
 set_global_assignment -name BDF_FILE latch_SR_reset.bdf
 set_global_assignment -name BDF_FILE control_unit.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform11.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name BDF_FILE reg_8_bits.bdf
 set_global_assignment -name BDF_FILE neander_alu.bdf
 set_global_assignment -name MIF_FILE teste.mif
+set_global_assignment -name BDF_FILE freq_div25_select.bdf
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_H2 -to rst
+set_location_assignment PIN_J6 -to f[2]
+set_location_assignment PIN_H5 -to f[1]
+set_location_assignment PIN_H6 -to f[0]
+set_location_assignment PIN_J1 -to n
+set_location_assignment PIN_J2 -to z
+set_location_assignment PIN_F13 -to s0[6]
+set_location_assignment PIN_F12 -to s0[5]
+set_location_assignment PIN_G12 -to s0[4]
+set_location_assignment PIN_H13 -to s0[3]
+set_location_assignment PIN_H12 -to s0[2]
+set_location_assignment PIN_F11 -to s0[1]
+set_location_assignment PIN_E11 -to s0[0]
+set_location_assignment PIN_A15 -to s1[6]
+set_location_assignment PIN_E14 -to s1[5]
+set_location_assignment PIN_B14 -to s1[4]
+set_location_assignment PIN_A14 -to s1[3]
+set_location_assignment PIN_C13 -to s1[2]
+set_location_assignment PIN_B13 -to s1[1]
+set_location_assignment PIN_A13 -to s1[0]
+set_location_assignment PIN_G21 -to clock
+set_location_assignment PIN_F14 -to pc0[6]
+set_location_assignment PIN_B17 -to pc0[5]
+set_location_assignment PIN_A17 -to pc0[4]
+set_location_assignment PIN_E15 -to pc0[3]
+set_location_assignment PIN_B16 -to pc0[2]
+set_location_assignment PIN_A16 -to pc0[1]
+set_location_assignment PIN_D15 -to pc0[0]
+set_location_assignment PIN_G15 -to pc1[6]
+set_location_assignment PIN_D19 -to pc1[5]
+set_location_assignment PIN_C19 -to pc1[4]
+set_location_assignment PIN_B19 -to pc1[3]
+set_location_assignment PIN_A19 -to pc1[2]
+set_location_assignment PIN_F15 -to pc1[1]
+set_location_assignment PIN_B18 -to pc1[0]
+set_global_assignment -name MIF_FILE final_work.mif
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
