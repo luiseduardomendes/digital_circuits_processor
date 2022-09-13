@@ -1,5 +1,5 @@
 Analysis & Synthesis report for final_work
-Tue Sep 06 17:07:17 2022
+Mon Sep 12 23:12:08 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -13,16 +13,11 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis RAM Summary
+  8. Registers Removed During Synthesis
   9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Registers Packed Into Inferred Megafunctions
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for Ahmes:inst|memoria:inst9|altsyncram:Mux7_rtl_0|altsyncram_lv01:auto_generated
- 14. Parameter Settings for Inferred Entity Instance: Ahmes:inst|memoria:inst9|altsyncram:Mux7_rtl_0
- 15. altsyncram Parameter Settings by Entity Instance
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -48,18 +43,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Sep 06 17:07:17 2022      ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 12 23:12:08 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; final_work                                 ;
 ; Top-level Entity Name              ; final_work                                 ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 163                                        ;
-;     Total combinational functions  ; 159                                        ;
-;     Dedicated logic registers      ; 58                                         ;
-; Total registers                    ; 58                                         ;
-; Total pins                         ; 35                                         ;
+; Total logic elements               ; 228                                        ;
+;     Total combinational functions  ; 218                                        ;
+;     Dedicated logic registers      ; 72                                         ;
+; Total registers                    ; 72                                         ;
+; Total pins                         ; 38                                         ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 2,048                                      ;
+; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
 ; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
@@ -163,216 +158,233 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                         ; Library ;
-+----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------+---------+
-; mux2x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux2x1.bdf                     ;         ;
-; mux4x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux4x1.bdf                     ;         ;
-; mux8x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux8x1.bdf                     ;         ;
-; decod3x8.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/decod3x8.bdf                   ;         ;
-; decod4x16.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/decod4x16.bdf                  ;         ;
-; and_8bits.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/and_8bits.bdf                  ;         ;
-; or_8bits.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/or_8bits.bdf                   ;         ;
-; not_8bits.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/not_8bits.bdf                  ;         ;
-; mux8x1_8bits.bdf                 ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux8x1_8bits.bdf               ;         ;
-; mux2x1_8bits.bdf                 ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux2x1_8bits.bdf               ;         ;
-; Ahmes.bdf                        ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/Ahmes.bdf                      ;         ;
-; zero_check.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/zero_check.bdf                 ;         ;
-; final_work.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/final_work.bdf                 ;         ;
-; negative_check.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/negative_check.bdf             ;         ;
-; control_unit.bdf                 ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/control_unit.bdf               ;         ;
-; reg_8_bits.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/reg_8_bits.bdf                 ;         ;
-; neander_alu.bdf                  ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/neander_alu.bdf                ;         ;
-; freq_div25_select.bdf            ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/freq_div25_select.bdf          ;         ;
-; teste.vhd                        ; yes             ; User VHDL File                           ; D:/Github/digital_circuits_processor1/teste.vhd                      ;         ;
-; 8_bits_adder.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/8_bits_adder.bdf               ;         ;
-; full_adder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/full_adder.bdf                 ;         ;
-; half_adder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/half_adder.bdf                 ;         ;
-; freq_div.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/freq_div.bdf                   ;         ;
-; counter_8_bits.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/counter_8_bits.bdf             ;         ;
-; generic_counter.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/generic_counter.bdf            ;         ;
-; display_7_seg.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/display_7_seg.bdf              ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal131.inc                   ; yes             ; Megafunction                             ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                             ; c:/altera/13.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                             ; c:/altera/13.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                             ; c:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_lv01.tdf           ; yes             ; Auto-Generated Megafunction              ; D:/Github/digital_circuits_processor1/db/altsyncram_lv01.tdf         ;         ;
-+----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------+---------+
+; mux2x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux2x1.bdf               ;         ;
+; mux4x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux4x1.bdf               ;         ;
+; mux16x1.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux16x1.bdf              ;         ;
+; mux8x1.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux8x1.bdf               ;         ;
+; decod3x8.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/decod3x8.bdf             ;         ;
+; decod4x16.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/decod4x16.bdf            ;         ;
+; and_8bits.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/and_8bits.bdf            ;         ;
+; or_8bits.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/or_8bits.bdf             ;         ;
+; not_8bits.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/not_8bits.bdf            ;         ;
+; mux4x1_8bits.bdf                 ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux4x1_8bits.bdf         ;         ;
+; ahmes_alu.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/ahmes_alu.bdf            ;         ;
+; mux2x1_8bits.bdf                 ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux2x1_8bits.bdf         ;         ;
+; decod2x4.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/decod2x4.bdf             ;         ;
+; Ahmes.bdf                        ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/Ahmes.bdf                ;         ;
+; zero_check.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/zero_check.bdf           ;         ;
+; shl.bdf                          ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/shl.bdf                  ;         ;
+; mux16x1_8bitsa.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/mux16x1_8bitsa.bdf       ;         ;
+; final_work.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/final_work.bdf           ;         ;
+; negative_check.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/negative_check.bdf       ;         ;
+; reg_8_bits.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/reg_8_bits.bdf           ;         ;
+; freq_div25_select.bdf            ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/freq_div25_select.bdf    ;         ;
+; teste.vhd                        ; yes             ; User VHDL File                           ; D:/Github/digital_circuits_processor1/teste.vhd                ;         ;
+; Ahmes_uc.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/Ahmes_uc.bdf             ;         ;
+; Ahmes_instr_decod.bdf            ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/Ahmes_instr_decod.bdf    ;         ;
+; ahmes_board.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/ahmes_board.bdf          ;         ;
+; carry_check_ahmes.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/carry_check_ahmes.bdf    ;         ;
+; shr.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/shr.bdf                  ;         ;
+; ror.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/ror.bdf                  ;         ;
+; rol.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/rol.bdf                  ;         ;
+; borrow_check_ahmes.bdf           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/borrow_check_ahmes.bdf   ;         ;
+; add_sub.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/add_sub.bdf              ;         ;
+; 8_bits_adder.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/8_bits_adder.bdf         ;         ;
+; full_adder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/full_adder.bdf           ;         ;
+; half_adder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/half_adder.bdf           ;         ;
+; overflow_check_ahmes.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/overflow_check_ahmes.bdf ;         ;
+; m_inst_counter.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/m_inst_counter.bdf       ;         ;
+; counter_8_bits.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/counter_8_bits.bdf       ;         ;
+; generic_counter.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/generic_counter.bdf      ;         ;
+; cond_test.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/cond_test.bdf            ;         ;
+; decod1x2.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/decod1x2.bdf             ;         ;
+; freq_div.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/freq_div.bdf             ;         ;
+; display_7_seg.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/display_7_seg.bdf        ;         ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                       ;
-+---------------------------------------------+---------------------------------------------------------------------+
-; Resource                                    ; Usage                                                               ;
-+---------------------------------------------+---------------------------------------------------------------------+
-; Estimated Total logic elements              ; 163                                                                 ;
-;                                             ;                                                                     ;
-; Total combinational functions               ; 159                                                                 ;
-; Logic element usage by number of LUT inputs ;                                                                     ;
-;     -- 4 input functions                    ; 75                                                                  ;
-;     -- 3 input functions                    ; 48                                                                  ;
-;     -- <=2 input functions                  ; 36                                                                  ;
-;                                             ;                                                                     ;
-; Logic elements by mode                      ;                                                                     ;
-;     -- normal mode                          ; 159                                                                 ;
-;     -- arithmetic mode                      ; 0                                                                   ;
-;                                             ;                                                                     ;
-; Total registers                             ; 58                                                                  ;
-;     -- Dedicated logic registers            ; 58                                                                  ;
-;     -- I/O registers                        ; 0                                                                   ;
-;                                             ;                                                                     ;
-; I/O pins                                    ; 35                                                                  ;
-; Total memory bits                           ; 2048                                                                ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                   ;
-; Maximum fan-out node                        ; Ahmes:inst|freq_div25_select:inst6|mux8x1:inst25|mux2x1:inst1|inst2 ;
-; Maximum fan-out                             ; 41                                                                  ;
-; Total fan-out                               ; 818                                                                 ;
-; Average fan-out                             ; 2.77                                                                ;
-+---------------------------------------------+---------------------------------------------------------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 228         ;
+;                                             ;             ;
+; Total combinational functions               ; 218         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 149         ;
+;     -- 3 input functions                    ; 34          ;
+;     -- <=2 input functions                  ; 35          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 218         ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 72          ;
+;     -- Dedicated logic registers            ; 72          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 38          ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 72          ;
+; Total fan-out                               ; 1069        ;
+; Average fan-out                             ; 2.92        ;
++---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                    ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                          ; Library Name ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+--------------+
-; |final_work                                  ; 159 (0)           ; 58 (0)       ; 2048        ; 0            ; 0       ; 0         ; 35   ; 0            ; |final_work                                                                                                  ; work         ;
-;    |Ahmes:inst|                              ; 159 (7)           ; 58 (2)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst                                                                                       ; work         ;
-;       |control_unit:inst|                    ; 22 (15)           ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|control_unit:inst                                                                     ; work         ;
-;          |counter_8_bits:inst2|              ; 4 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|control_unit:inst|counter_8_bits:inst2                                                ; work         ;
-;             |generic_counter:inst3|          ; 1 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|control_unit:inst|counter_8_bits:inst2|generic_counter:inst3                          ; work         ;
-;                |mux4x1:inst|                 ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|control_unit:inst|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst              ; work         ;
-;                   |mux2x1:inst2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|control_unit:inst|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst|mux2x1:inst2 ; work         ;
-;             |generic_counter:inst4|          ; 2 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|control_unit:inst|counter_8_bits:inst2|generic_counter:inst4                          ; work         ;
-;                |mux4x1:inst|                 ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|control_unit:inst|counter_8_bits:inst2|generic_counter:inst4|mux4x1:inst              ; work         ;
-;                   |mux2x1:inst2|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|control_unit:inst|counter_8_bits:inst2|generic_counter:inst4|mux4x1:inst|mux2x1:inst2 ; work         ;
-;             |generic_counter:inst|           ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|control_unit:inst|counter_8_bits:inst2|generic_counter:inst                           ; work         ;
-;          |decod3x8:inst|                     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|control_unit:inst|decod3x8:inst                                                       ; work         ;
-;       |counter_8_bits:PC|                    ; 19 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|counter_8_bits:PC                                                                     ; work         ;
-;          |generic_counter:inst3|             ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3                                               ; work         ;
-;          |generic_counter:inst4|             ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4                                               ; work         ;
-;          |generic_counter:inst5|             ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5                                               ; work         ;
-;          |generic_counter:inst6|             ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6                                               ; work         ;
-;          |generic_counter:inst7|             ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7                                               ; work         ;
-;          |generic_counter:inst8|             ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8                                               ; work         ;
-;          |generic_counter:inst9|             ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9                                               ; work         ;
-;          |generic_counter:inst|              ; 3 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst                                                ; work         ;
-;             |mux4x1:inst|                    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst                                    ; work         ;
-;                |mux2x1:inst|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst|mux2x1:inst                        ; work         ;
-;       |display_7_seg:inst1|                  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|display_7_seg:inst1                                                                   ; work         ;
-;       |display_7_seg:inst2|                  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|display_7_seg:inst2                                                                   ; work         ;
-;       |display_7_seg:inst4|                  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|display_7_seg:inst4                                                                   ; work         ;
-;       |display_7_seg:inst5|                  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|display_7_seg:inst5                                                                   ; work         ;
-;       |freq_div25_select:inst6|              ; 32 (0)            ; 25 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6                                                               ; work         ;
-;          |freq_div:inst10|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst10                                               ; work         ;
-;          |freq_div:inst11|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst11                                               ; work         ;
-;          |freq_div:inst12|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst12                                               ; work         ;
-;          |freq_div:inst13|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst13                                               ; work         ;
-;          |freq_div:inst14|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst14                                               ; work         ;
-;          |freq_div:inst15|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst15                                               ; work         ;
-;          |freq_div:inst16|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst16                                               ; work         ;
-;          |freq_div:inst17|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst17                                               ; work         ;
-;          |freq_div:inst18|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst18                                               ; work         ;
-;          |freq_div:inst19|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst19                                               ; work         ;
-;          |freq_div:inst1|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst1                                                ; work         ;
-;          |freq_div:inst20|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst20                                               ; work         ;
-;          |freq_div:inst21|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst21                                               ; work         ;
-;          |freq_div:inst22|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst22                                               ; work         ;
-;          |freq_div:inst23|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst23                                               ; work         ;
-;          |freq_div:inst24|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst24                                               ; work         ;
-;          |freq_div:inst2|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst2                                                ; work         ;
-;          |freq_div:inst3|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst3                                                ; work         ;
-;          |freq_div:inst4|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst4                                                ; work         ;
-;          |freq_div:inst5|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst5                                                ; work         ;
-;          |freq_div:inst6|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst6                                                ; work         ;
-;          |freq_div:inst7|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst7                                                ; work         ;
-;          |freq_div:inst8|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst8                                                ; work         ;
-;          |freq_div:inst9|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst9                                                ; work         ;
-;          |freq_div:inst|                     ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|freq_div:inst                                                 ; work         ;
-;          |mux8x1:inst25|                     ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|mux8x1:inst25                                                 ; work         ;
-;             |mux2x1:inst1|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|mux8x1:inst25|mux2x1:inst1                                    ; work         ;
-;             |mux4x1:inst2|                   ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst2                                    ; work         ;
-;                |mux2x1:inst2|                ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst2|mux2x1:inst2                       ; work         ;
-;             |mux4x1:inst|                    ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst                                     ; work         ;
-;                |mux2x1:inst2|                ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst|mux2x1:inst2                        ; work         ;
-;       |memoria:inst9|                        ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|memoria:inst9                                                                         ; work         ;
-;          |altsyncram:Mux7_rtl_0|             ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|memoria:inst9|altsyncram:Mux7_rtl_0                                                   ; work         ;
-;             |altsyncram_lv01:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|memoria:inst9|altsyncram:Mux7_rtl_0|altsyncram_lv01:auto_generated                    ; work         ;
-;       |mux2x1_8bits:inst3|                   ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|mux2x1_8bits:inst3                                                                    ; work         ;
-;          |mux2x1:inst1|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst1                                                       ; work         ;
-;          |mux2x1:inst2|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst2                                                       ; work         ;
-;          |mux2x1:inst3|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst3                                                       ; work         ;
-;          |mux2x1:inst4|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst4                                                       ; work         ;
-;          |mux2x1:inst5|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst5                                                       ; work         ;
-;          |mux2x1:inst6|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst6                                                       ; work         ;
-;          |mux2x1:inst7|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst7                                                       ; work         ;
-;          |mux2x1:inst|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst                                                        ; work         ;
-;       |neander_alu:inst22|                   ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22                                                                    ; work         ;
-;          |8_bits_adder:inst|                 ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst                                                  ; work         ;
-;             |full_adder:inst1|               ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst1                                 ; work         ;
-;                |half_adder:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst1|half_adder:inst1                ; work         ;
-;             |full_adder:inst2|               ; 3 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst2                                 ; work         ;
-;                |half_adder:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst2|half_adder:inst1                ; work         ;
-;             |full_adder:inst3|               ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst3                                 ; work         ;
-;                |half_adder:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst3|half_adder:inst1                ; work         ;
-;             |full_adder:inst4|               ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst4                                 ; work         ;
-;                |half_adder:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst4|half_adder:inst1                ; work         ;
-;             |full_adder:inst5|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst5                                 ; work         ;
-;             |full_adder:inst6|               ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst6                                 ; work         ;
-;                |half_adder:inst1|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst6|half_adder:inst1                ; work         ;
-;             |full_adder:inst7|               ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst7                                 ; work         ;
-;                |half_adder:inst1|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst7|half_adder:inst1                ; work         ;
-;          |mux8x1_8bits:inst12|               ; 26 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12                                                ; work         ;
-;             |mux8x1:inst2|                   ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst2                                   ; work         ;
-;                |mux2x1:inst1|                ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst2|mux2x1:inst1                      ; work         ;
-;                |mux4x1:inst2|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst2|mux4x1:inst2                      ; work         ;
-;                   |mux2x1:inst|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst2|mux4x1:inst2|mux2x1:inst          ; work         ;
-;             |mux8x1:inst3|                   ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst3                                   ; work         ;
-;                |mux2x1:inst1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst3|mux2x1:inst1                      ; work         ;
-;                |mux4x1:inst2|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst3|mux4x1:inst2                      ; work         ;
-;                   |mux2x1:inst|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst3|mux4x1:inst2|mux2x1:inst          ; work         ;
-;             |mux8x1:inst4|                   ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst4                                   ; work         ;
-;                |mux2x1:inst1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst4|mux2x1:inst1                      ; work         ;
-;                |mux4x1:inst2|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst4|mux4x1:inst2                      ; work         ;
-;                   |mux2x1:inst|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst4|mux4x1:inst2|mux2x1:inst          ; work         ;
-;             |mux8x1:inst5|                   ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst5                                   ; work         ;
-;                |mux2x1:inst1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst5|mux2x1:inst1                      ; work         ;
-;                |mux4x1:inst2|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst5|mux4x1:inst2                      ; work         ;
-;                   |mux2x1:inst|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst5|mux4x1:inst2|mux2x1:inst          ; work         ;
-;             |mux8x1:inst6|                   ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst6                                   ; work         ;
-;                |mux2x1:inst1|                ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst6|mux2x1:inst1                      ; work         ;
-;             |mux8x1:inst7|                   ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst7                                   ; work         ;
-;                |mux2x1:inst1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst7|mux2x1:inst1                      ; work         ;
-;                |mux4x1:inst2|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst7|mux4x1:inst2                      ; work         ;
-;                   |mux2x1:inst|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst7|mux4x1:inst2|mux2x1:inst          ; work         ;
-;             |mux8x1:inst8|                   ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst8                                   ; work         ;
-;                |mux2x1:inst1|                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst8|mux2x1:inst1                      ; work         ;
-;                |mux4x1:inst2|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst8|mux4x1:inst2                      ; work         ;
-;                   |mux2x1:inst|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst8|mux4x1:inst2|mux2x1:inst          ; work         ;
-;             |mux8x1:inst|                    ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst                                    ; work         ;
-;                |mux2x1:inst1|                ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst|mux2x1:inst1                       ; work         ;
-;          |zero_check:inst24|                 ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|neander_alu:inst22|zero_check:inst24                                                  ; work         ;
-;       |reg_8_bits:AC|                        ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|reg_8_bits:AC                                                                         ; work         ;
-;       |reg_8_bits:REM|                       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|reg_8_bits:REM                                                                        ; work         ;
-;       |reg_8_bits:RI|                        ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes:inst|reg_8_bits:RI                                                                         ; work         ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                   ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                            ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |final_work                               ; 218 (0)           ; 72 (0)       ; 0           ; 0            ; 0       ; 0         ; 38   ; 0            ; |final_work                                                                                                                                    ; work         ;
+;    |Ahmes_board:inst|                     ; 218 (0)           ; 72 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst                                                                                                                   ; work         ;
+;       |Ahmes:inst|                        ; 158 (3)           ; 47 (5)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst                                                                                                        ; work         ;
+;          |Ahmes_uc:inst|                  ; 35 (23)           ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst                                                                                          ; work         ;
+;             |Ahmes_instr_decod:inst|      ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|Ahmes_instr_decod:inst                                                                   ; work         ;
+;                |decod4x16:inst|           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|Ahmes_instr_decod:inst|decod4x16:inst                                                    ; work         ;
+;             |m_inst_counter:inst1|        ; 5 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1                                                                     ; work         ;
+;                |counter_8_bits:inst2|     ; 3 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2                                                ; work         ;
+;                   |generic_counter:inst3| ; 1 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst3                          ; work         ;
+;                      |mux4x1:inst|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst              ; work         ;
+;                         |mux2x1:inst2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst|mux2x1:inst2 ; work         ;
+;                   |generic_counter:inst4| ; 1 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst4                          ; work         ;
+;                      |mux4x1:inst|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst4|mux4x1:inst              ; work         ;
+;                         |mux2x1:inst2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst4|mux4x1:inst|mux2x1:inst2 ; work         ;
+;                   |generic_counter:inst|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst                           ; work         ;
+;                |decod3x8:inst1|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|decod3x8:inst1                                                      ; work         ;
+;          |ahmes_alu:inst7|                ; 51 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7                                                                                        ; work         ;
+;             |add_sub:inst10|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10                                                                         ; work         ;
+;                |8_bits_adder:inst46|      ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46                                                     ; work         ;
+;                   |full_adder:inst1|      ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst1                                    ; work         ;
+;                      |half_adder:inst1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst1|half_adder:inst1                   ; work         ;
+;                   |full_adder:inst2|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst2                                    ; work         ;
+;                   |full_adder:inst3|      ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst3                                    ; work         ;
+;                      |half_adder:inst1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst3|half_adder:inst1                   ; work         ;
+;                   |full_adder:inst4|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst4                                    ; work         ;
+;                   |full_adder:inst5|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst5                                    ; work         ;
+;                   |full_adder:inst8|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst8                                    ; work         ;
+;             |mux16x1_8bitsa:inst|         ; 38 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst                                                                    ; work         ;
+;                |mux16x1:inst1|            ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst1                                                      ; work         ;
+;                   |mux4x1:inst3|          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst1|mux4x1:inst3                                         ; work         ;
+;                      |mux2x1:inst2|       ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst1|mux4x1:inst3|mux2x1:inst2                            ; work         ;
+;                |mux16x1:inst2|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst2                                                      ; work         ;
+;                   |mux4x1:inst3|          ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst2|mux4x1:inst3                                         ; work         ;
+;                      |mux2x1:inst2|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst2|mux4x1:inst3|mux2x1:inst2                            ; work         ;
+;                |mux16x1:inst3|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst3                                                      ; work         ;
+;                   |mux4x1:inst3|          ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst3|mux4x1:inst3                                         ; work         ;
+;                      |mux2x1:inst2|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst3|mux4x1:inst3|mux2x1:inst2                            ; work         ;
+;                |mux16x1:inst4|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst4                                                      ; work         ;
+;                   |mux4x1:inst3|          ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst4|mux4x1:inst3                                         ; work         ;
+;                      |mux2x1:inst2|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst4|mux4x1:inst3|mux2x1:inst2                            ; work         ;
+;                |mux16x1:inst5|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst5                                                      ; work         ;
+;                   |mux4x1:inst3|          ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst5|mux4x1:inst3                                         ; work         ;
+;                      |mux2x1:inst2|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst5|mux4x1:inst3|mux2x1:inst2                            ; work         ;
+;                |mux16x1:inst6|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst6                                                      ; work         ;
+;                   |mux4x1:inst3|          ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst6|mux4x1:inst3                                         ; work         ;
+;                      |mux2x1:inst2|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst6|mux4x1:inst3|mux2x1:inst2                            ; work         ;
+;                |mux16x1:inst7|            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst7                                                      ; work         ;
+;                   |mux4x1:inst3|          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst7|mux4x1:inst3                                         ; work         ;
+;                      |mux2x1:inst2|       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst7|mux4x1:inst3|mux2x1:inst2                            ; work         ;
+;                |mux16x1:inst|             ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst                                                       ; work         ;
+;                   |mux4x1:inst3|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst|mux4x1:inst3                                          ; work         ;
+;                      |mux2x1:inst2|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst|mux4x1:inst3|mux2x1:inst2                             ; work         ;
+;             |overflow_check_ahmes:inst9|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|overflow_check_ahmes:inst9                                                             ; work         ;
+;             |zero_check:inst24|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|zero_check:inst24                                                                      ; work         ;
+;          |counter_8_bits:PC|              ; 15 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC                                                                                      ; work         ;
+;             |generic_counter:inst3|       ; 2 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3                                                                ; work         ;
+;                |mux4x1:inst|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|mux4x1:inst                                                    ; work         ;
+;                   |mux2x1:inst2|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|mux4x1:inst|mux2x1:inst2                                       ; work         ;
+;             |generic_counter:inst4|       ; 2 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4                                                                ; work         ;
+;                |mux4x1:inst|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4|mux4x1:inst                                                    ; work         ;
+;                   |mux2x1:inst2|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst4|mux4x1:inst|mux2x1:inst2                                       ; work         ;
+;             |generic_counter:inst5|       ; 2 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5                                                                ; work         ;
+;                |mux4x1:inst|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5|mux4x1:inst                                                    ; work         ;
+;                   |mux2x1:inst2|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst5|mux4x1:inst|mux2x1:inst2                                       ; work         ;
+;             |generic_counter:inst6|       ; 2 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6                                                                ; work         ;
+;                |mux4x1:inst|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6|mux4x1:inst                                                    ; work         ;
+;                   |mux2x1:inst2|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst6|mux4x1:inst|mux2x1:inst2                                       ; work         ;
+;             |generic_counter:inst7|       ; 2 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7                                                                ; work         ;
+;                |mux4x1:inst|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7|mux4x1:inst                                                    ; work         ;
+;                   |mux2x1:inst2|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst7|mux4x1:inst|mux2x1:inst2                                       ; work         ;
+;             |generic_counter:inst8|       ; 2 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8                                                                ; work         ;
+;                |mux4x1:inst|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8|mux4x1:inst                                                    ; work         ;
+;                   |mux2x1:inst2|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst8|mux4x1:inst|mux2x1:inst2                                       ; work         ;
+;             |generic_counter:inst9|       ; 2 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9                                                                ; work         ;
+;                |mux4x1:inst|              ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9|mux4x1:inst                                                    ; work         ;
+;                   |mux2x1:inst2|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9|mux4x1:inst|mux2x1:inst2                                       ; work         ;
+;             |generic_counter:inst|        ; 1 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst                                                                 ; work         ;
+;                |mux4x1:inst|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst                                                     ; work         ;
+;                   |mux2x1:inst2|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst|mux2x1:inst2                                        ; work         ;
+;          |memoria:inst4|                  ; 45 (45)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|memoria:inst4                                                                                          ; work         ;
+;          |mux2x1:inst5|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|mux2x1:inst5                                                                                           ; work         ;
+;          |mux2x1_8bits:inst3|             ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|mux2x1_8bits:inst3                                                                                     ; work         ;
+;             |mux2x1:inst1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst1                                                                        ; work         ;
+;             |mux2x1:inst2|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst2                                                                        ; work         ;
+;             |mux2x1:inst3|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst3                                                                        ; work         ;
+;             |mux2x1:inst4|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst4                                                                        ; work         ;
+;             |mux2x1:inst5|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst5                                                                        ; work         ;
+;             |mux2x1:inst6|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst6                                                                        ; work         ;
+;             |mux2x1:inst7|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst7                                                                        ; work         ;
+;             |mux2x1:inst|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst                                                                         ; work         ;
+;          |reg_8_bits:AC|                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|reg_8_bits:AC                                                                                          ; work         ;
+;          |reg_8_bits:RDM|                 ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|reg_8_bits:RDM                                                                                         ; work         ;
+;          |reg_8_bits:REM|                 ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|reg_8_bits:REM                                                                                         ; work         ;
+;          |reg_8_bits:RI|                  ; 0 (0)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|Ahmes:inst|reg_8_bits:RI                                                                                          ; work         ;
+;       |display_7_seg:inst1|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|display_7_seg:inst1                                                                                               ; work         ;
+;       |display_7_seg:inst2|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|display_7_seg:inst2                                                                                               ; work         ;
+;       |display_7_seg:inst4|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|display_7_seg:inst4                                                                                               ; work         ;
+;       |display_7_seg:inst5|               ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|display_7_seg:inst5                                                                                               ; work         ;
+;       |freq_div25_select:inst6|           ; 32 (0)            ; 25 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6                                                                                           ; work         ;
+;          |freq_div:inst10|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst10                                                                           ; work         ;
+;          |freq_div:inst11|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst11                                                                           ; work         ;
+;          |freq_div:inst12|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst12                                                                           ; work         ;
+;          |freq_div:inst13|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst13                                                                           ; work         ;
+;          |freq_div:inst14|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst14                                                                           ; work         ;
+;          |freq_div:inst15|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst15                                                                           ; work         ;
+;          |freq_div:inst16|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst16                                                                           ; work         ;
+;          |freq_div:inst17|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst17                                                                           ; work         ;
+;          |freq_div:inst18|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst18                                                                           ; work         ;
+;          |freq_div:inst19|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst19                                                                           ; work         ;
+;          |freq_div:inst1|                 ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst1                                                                            ; work         ;
+;          |freq_div:inst20|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst20                                                                           ; work         ;
+;          |freq_div:inst21|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst21                                                                           ; work         ;
+;          |freq_div:inst22|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst22                                                                           ; work         ;
+;          |freq_div:inst23|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst23                                                                           ; work         ;
+;          |freq_div:inst24|                ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst24                                                                           ; work         ;
+;          |freq_div:inst2|                 ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst2                                                                            ; work         ;
+;          |freq_div:inst3|                 ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst3                                                                            ; work         ;
+;          |freq_div:inst4|                 ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst4                                                                            ; work         ;
+;          |freq_div:inst5|                 ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst5                                                                            ; work         ;
+;          |freq_div:inst6|                 ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst6                                                                            ; work         ;
+;          |freq_div:inst7|                 ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst7                                                                            ; work         ;
+;          |freq_div:inst8|                 ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst8                                                                            ; work         ;
+;          |freq_div:inst9|                 ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst9                                                                            ; work         ;
+;          |freq_div:inst|                  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst                                                                             ; work         ;
+;          |mux8x1:inst25|                  ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|mux8x1:inst25                                                                             ; work         ;
+;             |mux2x1:inst1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|mux8x1:inst25|mux2x1:inst1                                                                ; work         ;
+;             |mux4x1:inst2|                ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst2                                                                ; work         ;
+;                |mux2x1:inst2|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst2|mux2x1:inst2                                                   ; work         ;
+;             |mux4x1:inst|                 ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst                                                                 ; work         ;
+;                |mux2x1:inst2|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_work|Ahmes_board:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst|mux2x1:inst2                                                    ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                           ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------+
-; Name                                                                                     ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                            ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------+
-; Ahmes:inst|memoria:inst9|altsyncram:Mux7_rtl_0|altsyncram_lv01:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; final_work.final_work0.rtl.mif ;
-+------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+--------------------------------+
++----------------------------------------------------------------------+
+; Registers Removed During Synthesis                                   ;
++-------------------------------------------------+--------------------+
+; Register name                                   ; Reason for Removal ;
++-------------------------------------------------+--------------------+
+; Ahmes_board:inst|Ahmes:inst|reg_8_bits:RI|inst2 ; Lost fanout        ;
+; Total Number of Removed Registers = 1           ;                    ;
++-------------------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -380,141 +392,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 58    ;
+; Total registers                              ; 72    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 1     ;
-; Number of registers using Asynchronous Clear ; 38    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 72    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 29    ;
+; Number of registers using Clock Enable       ; 43    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; Ahmes:inst|inst11                      ; 4       ;
-; Ahmes:inst|inst23                      ; 4       ;
-; Total number of inverted registers = 2 ;         ;
-+----------------------------------------+---------+
-
-
-+------------------------------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions                                 ;
-+---------------------------------+-------------------------------------+------+
-; Register Name                   ; Megafunction                        ; Type ;
-+---------------------------------+-------------------------------------+------+
-; Ahmes:inst|reg_8_bits:RDM|inst  ; Ahmes:inst|memoria:inst9|Mux7_rtl_0 ; ROM  ;
-; Ahmes:inst|reg_8_bits:RDM|inst2 ; Ahmes:inst|memoria:inst9|Mux7_rtl_0 ; ROM  ;
-; Ahmes:inst|reg_8_bits:RDM|inst3 ; Ahmes:inst|memoria:inst9|Mux7_rtl_0 ; ROM  ;
-; Ahmes:inst|reg_8_bits:RDM|inst4 ; Ahmes:inst|memoria:inst9|Mux7_rtl_0 ; ROM  ;
-; Ahmes:inst|reg_8_bits:RDM|inst5 ; Ahmes:inst|memoria:inst9|Mux7_rtl_0 ; ROM  ;
-; Ahmes:inst|reg_8_bits:RDM|inst6 ; Ahmes:inst|memoria:inst9|Mux7_rtl_0 ; ROM  ;
-; Ahmes:inst|reg_8_bits:RDM|inst7 ; Ahmes:inst|memoria:inst9|Mux7_rtl_0 ; ROM  ;
-; Ahmes:inst|reg_8_bits:RDM|inst1 ; Ahmes:inst|memoria:inst9|Mux7_rtl_0 ; ROM  ;
-+---------------------------------+-------------------------------------+------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |final_work|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|inst5                          ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |final_work|Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst2|mux2x1:inst1|inst2 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------+
-; Source assignments for Ahmes:inst|memoria:inst9|altsyncram:Mux7_rtl_0|altsyncram_lv01:auto_generated ;
-+---------------------------------+--------------------+------+----------------------------------------+
-; Assignment                      ; Value              ; From ; To                                     ;
-+---------------------------------+--------------------+------+----------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                      ;
-+---------------------------------+--------------------+------+----------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: Ahmes:inst|memoria:inst9|altsyncram:Mux7_rtl_0 ;
-+------------------------------------+--------------------------------+---------------------------+
-; Parameter Name                     ; Value                          ; Type                      ;
-+------------------------------------+--------------------------------+---------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                              ; Untyped                   ;
-; AUTO_CARRY_CHAINS                  ; ON                             ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS               ; OFF                            ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS                ; ON                             ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                            ; IGNORE_CASCADE            ;
-; WIDTH_BYTEENA                      ; 1                              ; Untyped                   ;
-; OPERATION_MODE                     ; ROM                            ; Untyped                   ;
-; WIDTH_A                            ; 8                              ; Untyped                   ;
-; WIDTHAD_A                          ; 8                              ; Untyped                   ;
-; NUMWORDS_A                         ; 256                            ; Untyped                   ;
-; OUTDATA_REG_A                      ; UNREGISTERED                   ; Untyped                   ;
-; ADDRESS_ACLR_A                     ; NONE                           ; Untyped                   ;
-; OUTDATA_ACLR_A                     ; NONE                           ; Untyped                   ;
-; WRCONTROL_ACLR_A                   ; NONE                           ; Untyped                   ;
-; INDATA_ACLR_A                      ; NONE                           ; Untyped                   ;
-; BYTEENA_ACLR_A                     ; NONE                           ; Untyped                   ;
-; WIDTH_B                            ; 1                              ; Untyped                   ;
-; WIDTHAD_B                          ; 1                              ; Untyped                   ;
-; NUMWORDS_B                         ; 1                              ; Untyped                   ;
-; INDATA_REG_B                       ; CLOCK1                         ; Untyped                   ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                         ; Untyped                   ;
-; RDCONTROL_REG_B                    ; CLOCK1                         ; Untyped                   ;
-; ADDRESS_REG_B                      ; CLOCK1                         ; Untyped                   ;
-; OUTDATA_REG_B                      ; UNREGISTERED                   ; Untyped                   ;
-; BYTEENA_REG_B                      ; CLOCK1                         ; Untyped                   ;
-; INDATA_ACLR_B                      ; NONE                           ; Untyped                   ;
-; WRCONTROL_ACLR_B                   ; NONE                           ; Untyped                   ;
-; ADDRESS_ACLR_B                     ; NONE                           ; Untyped                   ;
-; OUTDATA_ACLR_B                     ; NONE                           ; Untyped                   ;
-; RDCONTROL_ACLR_B                   ; NONE                           ; Untyped                   ;
-; BYTEENA_ACLR_B                     ; NONE                           ; Untyped                   ;
-; WIDTH_BYTEENA_A                    ; 1                              ; Untyped                   ;
-; WIDTH_BYTEENA_B                    ; 1                              ; Untyped                   ;
-; RAM_BLOCK_TYPE                     ; AUTO                           ; Untyped                   ;
-; BYTE_SIZE                          ; 8                              ; Untyped                   ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                      ; Untyped                   ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ           ; Untyped                   ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ           ; Untyped                   ;
-; INIT_FILE                          ; final_work.final_work0.rtl.mif ; Untyped                   ;
-; INIT_FILE_LAYOUT                   ; PORT_A                         ; Untyped                   ;
-; MAXIMUM_DEPTH                      ; 0                              ; Untyped                   ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL                         ; Untyped                   ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                         ; Untyped                   ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                         ; Untyped                   ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                         ; Untyped                   ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                ; Untyped                   ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                ; Untyped                   ;
-; ENABLE_ECC                         ; FALSE                          ; Untyped                   ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                          ; Untyped                   ;
-; WIDTH_ECCSTATUS                    ; 3                              ; Untyped                   ;
-; DEVICE_FAMILY                      ; Cyclone III                    ; Untyped                   ;
-; CBXI_PARAMETER                     ; altsyncram_lv01                ; Untyped                   ;
-+------------------------------------+--------------------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                           ;
-+-------------------------------------------+------------------------------------------------+
-; Name                                      ; Value                                          ;
-+-------------------------------------------+------------------------------------------------+
-; Number of entity instances                ; 1                                              ;
-; Entity Instance                           ; Ahmes:inst|memoria:inst9|altsyncram:Mux7_rtl_0 ;
-;     -- OPERATION_MODE                     ; ROM                                            ;
-;     -- WIDTH_A                            ; 8                                              ;
-;     -- NUMWORDS_A                         ; 256                                            ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                   ;
-;     -- WIDTH_B                            ; 1                                              ;
-;     -- NUMWORDS_B                         ; 1                                              ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                         ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                   ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                           ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                      ;
-+-------------------------------------------+------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------+
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |final_work|Ahmes_board:inst|Ahmes:inst|counter_8_bits:PC|generic_counter:inst3|inst5                                     ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 8 LEs                ; 6 LEs                  ; No         ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst|mux4x1:inst3|mux2x1:inst2|inst2  ;
+; 12:1               ; 6 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; No         ; |final_work|Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst1|mux4x1:inst3|mux2x1:inst2|inst2 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -532,7 +428,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Sep 06 17:07:14 2022
+    Info: Processing started: Mon Sep 12 23:12:04 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final_work -c final_work
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mux2x1.bdf
@@ -627,85 +523,110 @@ Info (12021): Found 1 design units, including 1 entities, in source file ram_1_p
 Info (12021): Found 2 design units, including 1 entities, in source file teste.vhd
     Info (12022): Found design unit 1: memoria-circ1
     Info (12023): Found entity 1: memoria
+Info (12021): Found 1 design units, including 1 entities, in source file ahmes_uc.bdf
+    Info (12023): Found entity 1: Ahmes_uc
+Info (12021): Found 1 design units, including 1 entities, in source file ahmes_instr_decod.bdf
+    Info (12023): Found entity 1: Ahmes_instr_decod
 Info (12127): Elaborating entity "final_work" for the top level hierarchy
-Info (12128): Elaborating entity "Ahmes" for hierarchy "Ahmes:inst"
-Info (12128): Elaborating entity "neander_alu" for hierarchy "Ahmes:inst|neander_alu:inst22"
-Info (12128): Elaborating entity "zero_check" for hierarchy "Ahmes:inst|neander_alu:inst22|zero_check:inst24"
-Info (12128): Elaborating entity "mux8x1_8bits" for hierarchy "Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12"
-Info (12128): Elaborating entity "mux8x1" for hierarchy "Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst2"
-Info (12128): Elaborating entity "mux2x1" for hierarchy "Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst2|mux2x1:inst1"
-Info (12128): Elaborating entity "mux4x1" for hierarchy "Ahmes:inst|neander_alu:inst22|mux8x1_8bits:inst12|mux8x1:inst2|mux4x1:inst"
+Warning (12125): Using design file ahmes_board.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Ahmes_board
+Info (12128): Elaborating entity "Ahmes_board" for hierarchy "Ahmes_board:inst"
+Warning (275011): Block or symbol "display_7_seg" of instance "inst2" overlaps another block or symbol
+Info (12128): Elaborating entity "Ahmes" for hierarchy "Ahmes_board:inst|Ahmes:inst"
+Warning (275043): Pin "c_fl" is missing source
+Warning (275008): Primitive "DFFE" of instance "inst12" not used
+Warning (275008): Primitive "VCC" of instance "inst29" not used
+Info (12128): Elaborating entity "ahmes_alu" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7"
+Warning (12125): Using design file carry_check_ahmes.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: carry_check_ahmes
+Info (12128): Elaborating entity "carry_check_ahmes" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|carry_check_ahmes:inst7"
+Info (12128): Elaborating entity "shl" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|shl:inst13"
+Info (12128): Elaborating entity "mux4x1" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux4x1:inst6"
+Info (12128): Elaborating entity "mux2x1" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux4x1:inst6|mux2x1:inst2"
+Warning (12125): Using design file shr.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: shr
+Info (12128): Elaborating entity "shr" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|shr:inst23"
+Warning (12125): Using design file ror.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ror
+Info (12128): Elaborating entity "ror" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|ror:inst72"
+Warning (12125): Using design file rol.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: rol
+Info (12128): Elaborating entity "rol" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|rol:inst84"
+Warning (12125): Using design file borrow_check_ahmes.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: borrow_check_ahmes
+Info (12128): Elaborating entity "borrow_check_ahmes" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|borrow_check_ahmes:inst8"
+Info (12128): Elaborating entity "zero_check" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|zero_check:inst24"
+Info (12128): Elaborating entity "mux16x1_8bitsa" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst"
+Info (12128): Elaborating entity "mux16x1" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst"
+Warning (12125): Using design file add_sub.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: add_sub
+Info (12128): Elaborating entity "add_sub" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10"
 Warning (12125): Using design file 8_bits_adder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: 8_bits_adder
-Info (12128): Elaborating entity "8_bits_adder" for hierarchy "Ahmes:inst|neander_alu:inst22|8_bits_adder:inst"
+Info (12128): Elaborating entity "8_bits_adder" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46"
 Warning (12125): Using design file full_adder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: full_adder
-Info (12128): Elaborating entity "full_adder" for hierarchy "Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst7"
+Info (12128): Elaborating entity "full_adder" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst7"
 Warning (12125): Using design file half_adder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: half_adder
-Info (12128): Elaborating entity "half_adder" for hierarchy "Ahmes:inst|neander_alu:inst22|8_bits_adder:inst|full_adder:inst7|half_adder:inst1"
-Info (12128): Elaborating entity "and_8bits" for hierarchy "Ahmes:inst|neander_alu:inst22|and_8bits:inst1"
-Info (12128): Elaborating entity "or_8bits" for hierarchy "Ahmes:inst|neander_alu:inst22|or_8bits:inst2"
-Info (12128): Elaborating entity "not_8bits" for hierarchy "Ahmes:inst|neander_alu:inst22|not_8bits:inst3"
-Info (12128): Elaborating entity "negative_check" for hierarchy "Ahmes:inst|neander_alu:inst22|negative_check:inst4"
-Info (12128): Elaborating entity "reg_8_bits" for hierarchy "Ahmes:inst|reg_8_bits:AC"
-Info (12128): Elaborating entity "freq_div25_select" for hierarchy "Ahmes:inst|freq_div25_select:inst6"
-Warning (275043): Pin "display_3_[6..0]" is missing source
-Warning (12125): Using design file freq_div.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: freq_div
-Info (12128): Elaborating entity "freq_div" for hierarchy "Ahmes:inst|freq_div25_select:inst6|freq_div:inst24"
-Info (12128): Elaborating entity "control_unit" for hierarchy "Ahmes:inst|control_unit:inst"
-Info (12128): Elaborating entity "decod3x8" for hierarchy "Ahmes:inst|control_unit:inst|decod3x8:inst"
+Info (12128): Elaborating entity "half_adder" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst7|half_adder:inst1"
+Info (12128): Elaborating entity "mux2x1_8bits" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|mux2x1_8bits:inst10"
+Info (12128): Elaborating entity "or_8bits" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|or_8bits:inst2"
+Info (12128): Elaborating entity "and_8bits" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|and_8bits:inst1"
+Info (12128): Elaborating entity "not_8bits" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|not_8bits:inst3"
+Info (12128): Elaborating entity "mux4x1_8bits" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|mux4x1_8bits:inst5"
+Info (12128): Elaborating entity "negative_check" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|negative_check:inst4"
+Warning (12125): Using design file overflow_check_ahmes.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: overflow_check_ahmes
+Info (12128): Elaborating entity "overflow_check_ahmes" for hierarchy "Ahmes_board:inst|Ahmes:inst|ahmes_alu:inst7|overflow_check_ahmes:inst9"
+Info (12128): Elaborating entity "reg_8_bits" for hierarchy "Ahmes_board:inst|Ahmes:inst|reg_8_bits:AC"
+Info (12128): Elaborating entity "Ahmes_uc" for hierarchy "Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst"
+Warning (12125): Using design file m_inst_counter.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: m_inst_counter
+Info (12128): Elaborating entity "m_inst_counter" for hierarchy "Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1"
+Info (12128): Elaborating entity "decod3x8" for hierarchy "Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|decod3x8:inst1"
 Warning (12125): Using design file counter_8_bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: counter_8_bits
-Info (12128): Elaborating entity "counter_8_bits" for hierarchy "Ahmes:inst|control_unit:inst|counter_8_bits:inst2"
+Info (12128): Elaborating entity "counter_8_bits" for hierarchy "Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2"
 Warning (12125): Using design file generic_counter.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: generic_counter
-Info (12128): Elaborating entity "generic_counter" for hierarchy "Ahmes:inst|control_unit:inst|counter_8_bits:inst2|generic_counter:inst3"
-Info (12128): Elaborating entity "decod4x16" for hierarchy "Ahmes:inst|control_unit:inst|decod4x16:inst3"
-Info (12128): Elaborating entity "memoria" for hierarchy "Ahmes:inst|memoria:inst9"
-Info (12128): Elaborating entity "mux2x1_8bits" for hierarchy "Ahmes:inst|mux2x1_8bits:inst3"
+Info (12128): Elaborating entity "generic_counter" for hierarchy "Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst3"
+Info (12128): Elaborating entity "Ahmes_instr_decod" for hierarchy "Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|Ahmes_instr_decod:inst"
+Info (12128): Elaborating entity "decod4x16" for hierarchy "Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|Ahmes_instr_decod:inst|decod4x16:inst"
+Info (12128): Elaborating entity "decod2x4" for hierarchy "Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|Ahmes_instr_decod:inst|decod2x4:inst4"
+Warning (12125): Using design file cond_test.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: cond_test
+Info (12128): Elaborating entity "cond_test" for hierarchy "Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|cond_test:inst15"
+Warning (12125): Using design file decod1x2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: decod1x2
+Info (12128): Elaborating entity "decod1x2" for hierarchy "Ahmes_board:inst|Ahmes:inst|Ahmes_uc:inst|cond_test:inst15|decod1x2:inst3"
+Info (12128): Elaborating entity "memoria" for hierarchy "Ahmes_board:inst|Ahmes:inst|memoria:inst4"
+Info (12128): Elaborating entity "freq_div25_select" for hierarchy "Ahmes_board:inst|freq_div25_select:inst6"
+Info (12128): Elaborating entity "mux8x1" for hierarchy "Ahmes_board:inst|freq_div25_select:inst6|mux8x1:inst25"
+Warning (12125): Using design file freq_div.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: freq_div
+Info (12128): Elaborating entity "freq_div" for hierarchy "Ahmes_board:inst|freq_div25_select:inst6|freq_div:inst24"
 Warning (12125): Using design file display_7_seg.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: display_7_seg
-Info (12128): Elaborating entity "display_7_seg" for hierarchy "Ahmes:inst|display_7_seg:inst2"
+Info (12128): Elaborating entity "display_7_seg" for hierarchy "Ahmes_board:inst|display_7_seg:inst2"
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer Ahmes:inst|freq_div25_select:inst6|mux8x1:inst25|mux2x1:inst1|inst2~0
-    Warning (19017): Found clock multiplexer Ahmes:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst2|mux2x1:inst2|inst2~0
-    Warning (19017): Found clock multiplexer Ahmes:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst|mux2x1:inst2|inst2~0
-Info (19000): Inferred 1 megafunctions from design logic
-    Info (276031): Inferred altsyncram megafunction from the following design logic: "Ahmes:inst|memoria:inst9|Mux7_rtl_0"
-        Info (286033): Parameter OPERATION_MODE set to ROM
-        Info (286033): Parameter WIDTH_A set to 8
-        Info (286033): Parameter WIDTHAD_A set to 8
-        Info (286033): Parameter NUMWORDS_A set to 256
-        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
-        Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
-        Info (286033): Parameter INIT_FILE set to final_work.final_work0.rtl.mif
-Info (12130): Elaborated megafunction instantiation "Ahmes:inst|memoria:inst9|altsyncram:Mux7_rtl_0"
-Info (12133): Instantiated megafunction "Ahmes:inst|memoria:inst9|altsyncram:Mux7_rtl_0" with the following parameter:
-    Info (12134): Parameter "OPERATION_MODE" = "ROM"
-    Info (12134): Parameter "WIDTH_A" = "8"
-    Info (12134): Parameter "WIDTHAD_A" = "8"
-    Info (12134): Parameter "NUMWORDS_A" = "256"
-    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
-    Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
-    Info (12134): Parameter "INIT_FILE" = "final_work.final_work0.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_lv01.tdf
-    Info (12023): Found entity 1: altsyncram_lv01
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+    Warning (19017): Found clock multiplexer Ahmes_board:inst|freq_div25_select:inst6|mux8x1:inst25|mux2x1:inst1|inst2~0
+    Warning (19017): Found clock multiplexer Ahmes_board:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst2|mux2x1:inst2|inst2~0
+    Warning (19017): Found clock multiplexer Ahmes_board:inst|freq_div25_select:inst6|mux8x1:inst25|mux4x1:inst|mux2x1:inst2|inst2~0
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "c" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 214 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 274 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 30 output pins
-    Info (21061): Implemented 171 logic cells
-    Info (21064): Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4677 megabytes
-    Info: Processing ended: Tue Sep 06 17:07:17 2022
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 236 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 4658 megabytes
+    Info: Processing ended: Mon Sep 12 23:12:08 2022
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

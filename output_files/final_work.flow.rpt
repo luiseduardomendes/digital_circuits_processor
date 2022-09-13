@@ -1,5 +1,5 @@
 Flow report for final_work
-Tue Sep 06 17:07:38 2022
+Mon Sep 12 23:12:31 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Sep 06 17:07:38 2022      ;
+; Flow Status                        ; Successful - Mon Sep 12 23:12:31 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; final_work                                 ;
 ; Top-level Entity Name              ; final_work                                 ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C16F484C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 184 / 15,408 ( 1 % )                       ;
-;     Total combinational functions  ; 159 / 15,408 ( 1 % )                       ;
-;     Dedicated logic registers      ; 58 / 15,408 ( < 1 % )                      ;
-; Total registers                    ; 58                                         ;
-; Total pins                         ; 35 / 347 ( 10 % )                          ;
+; Total logic elements               ; 244 / 15,408 ( 2 % )                       ;
+;     Total combinational functions  ; 220 / 15,408 ( 1 % )                       ;
+;     Dedicated logic registers      ; 72 / 15,408 ( < 1 % )                      ;
+; Total registers                    ; 72                                         ;
+; Total pins                         ; 38 / 347 ( 11 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 2,048 / 516,096 ( < 1 % )                  ;
+; Total memory bits                  ; 0 / 516,096 ( 0 % )                        ;
 ; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                            ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
 +------------------------------------+--------------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/06/2022 17:07:14 ;
+; Start date & time ; 09/12/2022 23:12:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; final_work          ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 145234202062048.166249483420624                        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 145234202062048.166303512418548                        ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                     ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; D:/Github/digital_circuits_processor1/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                            ; --            ; --          ; eda_simulation ;
@@ -102,12 +102,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4669 MB             ; 00:00:03                           ;
-; Fitter                    ; 00:00:09     ; 1.0                     ; 4969 MB             ; 00:00:09                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4566 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4654 MB             ; 00:00:04                           ;
+; Fitter                    ; 00:00:10     ; 1.0                     ; 4958 MB             ; 00:00:10                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 4570 MB             ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 4628 MB             ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4527 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:18     ; --                      ; --                  ; 00:00:20                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4527 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:22                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
