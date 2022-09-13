@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 232 176 400 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "k[3..0]" (rect 5 0 37 12)(font "Arial" ))
+	(text "k[3..0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -184,31 +184,6 @@ applicable agreement for further details.
 	(rect 280 216 328 248)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst19" (rect 3 21 32 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
-	(rect 280 248 328 280)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst20" (rect 3 21 32 33)(font "Arial" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -418,11 +393,6 @@ applicable agreement for further details.
 	(pt 256 232)
 )
 (connector
-	(text "k1" (rect 264 248 275 260)(font "Arial" ))
-	(pt 280 264)
-	(pt 256 264)
-)
-(connector
 	(text "k2" (rect 264 280 275 292)(font "Arial" ))
 	(pt 280 296)
 	(pt 256 296)
@@ -431,11 +401,6 @@ applicable agreement for further details.
 	(text "kn0" (rect 336 216 353 228)(font "Arial" ))
 	(pt 352 232)
 	(pt 328 232)
-)
-(connector
-	(text "kn1" (rect 336 248 353 260)(font "Arial" ))
-	(pt 352 264)
-	(pt 328 264)
 )
 (connector
 	(text "kn2" (rect 336 280 353 292)(font "Arial" ))

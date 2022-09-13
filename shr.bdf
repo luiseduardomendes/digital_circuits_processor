@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 328 224 496 240)
+	(rect 376 176 544 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "a[7..0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 840 200 1016 216)
+	(rect 776 200 952 216)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "s[7..0]" (rect 90 0 121 12)(font "Arial" ))
 	(pt 0 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 840 232 1016 248)
+	(rect 776 232 952 248)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "c" (rect 90 0 95 12)(font "Arial" ))
 	(pt 0 8)
@@ -68,7 +68,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 704 184 752 216)
+	(rect 680 184 728 216)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst4" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -92,7 +92,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 704 224 752 256)
+	(rect 680 224 728 256)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst5" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -116,7 +116,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 704 264 752 296)
+	(rect 680 264 728 296)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -140,7 +140,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 704 304 752 336)
+	(rect 680 304 728 336)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
 	(text "inst7" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -260,7 +260,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 584 168 616 200)
+	(rect 576 168 608 200)
 	(text "GND" (rect 6 3 16 24)(font "Arial" (font_size 6))(vertical))
 	(text "inst8" (rect -1 6 11 29)(font "Arial" )(vertical)(invisible))
 	(port
@@ -298,31 +298,6 @@ applicable agreement for further details.
 	(pt 544 344)
 )
 (connector
-	(text "a4" (rect 688 184 699 196)(font "Arial" ))
-	(pt 704 200)
-	(pt 680 200)
-)
-(connector
-	(text "a5" (rect 688 224 699 236)(font "Arial" ))
-	(pt 704 240)
-	(pt 680 240)
-)
-(connector
-	(text "a6" (rect 688 264 699 276)(font "Arial" ))
-	(pt 704 280)
-	(pt 680 280)
-)
-(connector
-	(text "a7" (rect 688 304 699 316)(font "Arial" ))
-	(pt 704 320)
-	(pt 680 320)
-)
-(connector
-	(text "s7" (rect 624 168 635 180)(font "Arial" ))
-	(pt 616 184)
-	(pt 648 184)
-)
-(connector
 	(text "c" (rect 624 208 629 220)(font "Arial" ))
 	(pt 616 224)
 	(pt 640 224)
@@ -343,22 +318,47 @@ applicable agreement for further details.
 	(pt 640 344)
 )
 (connector
-	(text "s3" (rect 753 184 764 196)(font "Arial" ))
+	(text "s7" (rect 616 168 627 180)(font "Arial" ))
+	(pt 608 184)
+	(pt 640 184)
+)
+(connector
+	(text "a4" (rect 664 184 675 196)(font "Arial" ))
+	(pt 680 200)
+	(pt 656 200)
+)
+(connector
+	(text "a5" (rect 664 224 675 236)(font "Arial" ))
+	(pt 680 240)
+	(pt 656 240)
+)
+(connector
+	(text "a6" (rect 664 264 675 276)(font "Arial" ))
+	(pt 680 280)
+	(pt 656 280)
+)
+(connector
+	(text "a7" (rect 664 304 675 316)(font "Arial" ))
+	(pt 680 320)
+	(pt 656 320)
+)
+(connector
+	(text "s3" (rect 729 184 740 196)(font "Arial" ))
+	(pt 728 200)
 	(pt 752 200)
-	(pt 776 200)
 )
 (connector
-	(text "s4" (rect 753 224 764 236)(font "Arial" ))
+	(text "s4" (rect 729 224 740 236)(font "Arial" ))
+	(pt 728 240)
 	(pt 752 240)
-	(pt 776 240)
 )
 (connector
-	(text "s5" (rect 760 264 771 276)(font "Arial" ))
+	(text "s5" (rect 736 264 747 276)(font "Arial" ))
+	(pt 728 280)
 	(pt 752 280)
-	(pt 776 280)
 )
 (connector
-	(text "s6" (rect 760 304 771 316)(font "Arial" ))
+	(text "s6" (rect 736 304 747 316)(font "Arial" ))
+	(pt 728 320)
 	(pt 752 320)
-	(pt 776 320)
 )
