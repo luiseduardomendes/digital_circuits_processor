@@ -1,13 +1,13 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
-ENTITY memoria IS
+ENTITY teste IS
 	PORT(
 		entrada: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		saida: OUT STD_LOGIC_VECTOR (7 DOWNTO 0));
-END memoria;
+END teste;
 
-ARCHITECTURE circ1 OF memoria IS
+ARCHITECTURE circ1 OF teste IS
 BEGIN
 	WITH entrada SELECT
 				   --	saida			 entrada

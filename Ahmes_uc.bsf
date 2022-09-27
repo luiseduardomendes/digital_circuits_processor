@@ -177,13 +177,6 @@ applicable agreement for further details.
 		(text "halt" (rect 111 235 131 249)(font "Arial" (font_size 8)))
 		(line (pt 152 240)(pt 136 240))
 	)
-	(port
-		(pt 152 256)
-		(output)
-		(text "t[7..0]" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "t[7..0]" (rect 100 251 131 265)(font "Arial" (font_size 8)))
-		(line (pt 152 256)(pt 136 256)(line_width 3))
-	)
 	(drawing
 		(rectangle (rect 16 16 136 272))
 	)

@@ -2,6 +2,7 @@ library verilog;
 use verilog.vl_types.all;
 entity testes_vlg_check_tst is
     port(
+        ac              : in     vl_logic_vector(7 downto 0);
         borrow          : in     vl_logic;
         carry           : in     vl_logic;
         instr           : in     vl_logic_vector(7 downto 0);
@@ -9,7 +10,6 @@ entity testes_vlg_check_tst is
         overflow        : in     vl_logic;
         pc              : in     vl_logic_vector(7 downto 0);
         s               : in     vl_logic_vector(7 downto 0);
-        t               : in     vl_logic_vector(7 downto 0);
         zero            : in     vl_logic;
         sampler_rx      : in     vl_logic
     );

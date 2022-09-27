@@ -17,15 +17,12 @@
 # Loading work.testes_vlg_vec_tst
 # Loading work.testes
 # Loading cycloneiv_ver.cycloneiv_io_obuf
-# Loading cycloneiv_ver.cycloneiv_lcell_comb
 # Loading cycloneiv_ver.cycloneiv_io_ibuf
-# Loading cycloneiv_ver.cycloneiv_clkctrl
-# Loading cycloneiv_ver.cycloneiv_mux41
-# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
 # Loading altera_ver.dffeas
 # Loading work.testes_vlg_sample_tst
 # Loading work.testes_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : Waveform23.vwf.vt(866)
+# ** Note: $finish    : Waveform32.vwf.vt(572)
 #    Time: 1 us  Iteration: 0  Instance: /testes_vlg_vec_tst/tb_out

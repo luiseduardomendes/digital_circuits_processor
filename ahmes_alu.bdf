@@ -838,11 +838,6 @@ applicable agreement for further details.
 	(pt 640 640)
 )
 (connector
-	(text "carry" (rect 640 416 665 428)(font "Arial" ))
-	(pt 632 432)
-	(pt 664 432)
-)
-(connector
 	(text "s[7..0]" (rect 648 88 679 100)(font "Arial" ))
 	(pt 640 104)
 	(pt 688 104)
@@ -990,12 +985,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "a[7..0]" (rect 464 120 495 132)(font "Arial" ))
-	(pt 504 136)
-	(pt 456 136)
-	(bus)
-)
-(connector
 	(text "bitshift[7..0]" (rect 448 312 508 324)(font "Arial" ))
 	(pt 504 328)
 	(pt 456 328)
@@ -1048,22 +1037,6 @@ applicable agreement for further details.
 	(pt 504 360)
 	(pt 456 360)
 	(bus)
-)
-(connector
-	(text "c_bitshift" (rect 456 432 502 444)(font "Arial" ))
-	(pt 512 448)
-	(pt 448 448)
-)
-(connector
-	(text "instr[7..4]" (rect 456 448 503 460)(font "Arial" ))
-	(pt 512 464)
-	(pt 448 464)
-	(bus)
-)
-(connector
-	(text "c_shl" (rect 456 416 481 428)(font "Arial" ))
-	(pt 512 432)
-	(pt 448 432)
 )
 (connector
 	(text "s[7..0]" (rect 451 624 482 636)(font "Arial" ))
@@ -1252,4 +1225,31 @@ applicable agreement for further details.
 	(text "a7" (rect 729 560 740 572)(font "Arial" ))
 	(pt 760 576)
 	(pt 712 576)
+)
+(connector
+	(text "b[7..0]" (rect 464 120 495 132)(font "Arial" ))
+	(pt 504 136)
+	(pt 456 136)
+	(bus)
+)
+(connector
+	(text "carry" (rect 640 416 665 428)(font "Arial" ))
+	(pt 632 432)
+	(pt 664 432)
+)
+(connector
+	(text "instr[7..4]" (rect 456 448 503 460)(font "Arial" ))
+	(pt 512 464)
+	(pt 448 464)
+	(bus)
+)
+(connector
+	(text "c_add" (rect 456 432 485 444)(font "Arial" ))
+	(pt 512 448)
+	(pt 448 448)
+)
+(connector
+	(text "c_bitshift" (rect 456 416 502 428)(font "Arial" ))
+	(pt 512 432)
+	(pt 448 432)
 )

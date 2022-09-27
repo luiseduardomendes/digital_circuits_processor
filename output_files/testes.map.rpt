@@ -1,5 +1,5 @@
 Analysis & Synthesis report for testes
-Sun Sep 11 18:29:41 2022
+Mon Sep 26 20:54:19 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -13,10 +13,11 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,15 +43,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 11 18:29:41 2022      ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 26 20:54:19 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; testes                                     ;
 ; Top-level Entity Name              ; testes                                     ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 195                                        ;
-;     Total combinational functions  ; 184                                        ;
-;     Dedicated logic registers      ; 48                                         ;
-; Total registers                    ; 48                                         ;
+; Total logic elements               ; 184                                        ;
+;     Total combinational functions  ; 175                                        ;
+;     Dedicated logic registers      ; 47                                         ;
+; Total registers                    ; 47                                         ;
 ; Total pins                         ; 39                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -175,48 +176,48 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; carry_check_ahmes.bdf            ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/carry_check_ahmes.bdf    ;         ;
 ; borrow_check_ahmes.bdf           ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/borrow_check_ahmes.bdf   ;         ;
 ; overflow_check_ahmes.bdf         ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/overflow_check_ahmes.bdf ;         ;
-; Vhdl1.vhd                        ; yes             ; User VHDL File                           ; D:/Github/digital_circuits_processor1/Vhdl1.vhd                ;         ;
 ; m_inst_counter.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/m_inst_counter.bdf       ;         ;
 ; add_sub.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/Github/digital_circuits_processor1/add_sub.bdf              ;         ;
 ; ahmes.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/ahmes.bdf                ;         ;
 ; ahmes_alu.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/ahmes_alu.bdf            ;         ;
-; shl.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/shl.bdf                  ;         ;
 ; mux4x1.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/mux4x1.bdf               ;         ;
 ; mux2x1.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/mux2x1.bdf               ;         ;
-; zero_check.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/zero_check.bdf           ;         ;
-; mux16x1_8bitsa.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/mux16x1_8bitsa.bdf       ;         ;
-; mux16x1.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/mux16x1.bdf              ;         ;
+; shl.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/shl.bdf                  ;         ;
 ; 8_bits_adder.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/8_bits_adder.bdf         ;         ;
 ; full_adder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/full_adder.bdf           ;         ;
 ; half_adder.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/half_adder.bdf           ;         ;
 ; mux2x1_8bits.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/mux2x1_8bits.bdf         ;         ;
+; zero_check.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/zero_check.bdf           ;         ;
+; mux16x1_8bitsa.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/mux16x1_8bitsa.bdf       ;         ;
+; mux16x1.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/mux16x1.bdf              ;         ;
 ; or_8bits.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/or_8bits.bdf             ;         ;
 ; and_8bits.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/and_8bits.bdf            ;         ;
 ; not_8bits.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/not_8bits.bdf            ;         ;
 ; mux4x1_8bits.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/mux4x1_8bits.bdf         ;         ;
 ; negative_check.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/negative_check.bdf       ;         ;
-; reg_8_bits.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/reg_8_bits.bdf           ;         ;
 ; decod3x8.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/decod3x8.bdf             ;         ;
 ; counter_8_bits.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/counter_8_bits.bdf       ;         ;
 ; generic_counter.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/generic_counter.bdf      ;         ;
 ; ahmes_instr_decod.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/ahmes_instr_decod.bdf    ;         ;
 ; decod4x16.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/decod4x16.bdf            ;         ;
 ; decod2x4.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/decod2x4.bdf             ;         ;
+; reg_8_bits.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Github/digital_circuits_processor1/reg_8_bits.bdf           ;         ;
+; teste.vhd                        ; yes             ; Auto-Found VHDL File                     ; D:/Github/digital_circuits_processor1/teste.vhd                ;         ;
 +----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+--------------------------+------------------------------+
-; Resource                 ; Usage                        ;
-+--------------------------+------------------------------+
-; I/O pins                 ; 39                           ;
-; DSP block 9-bit elements ; 0                            ;
-; Maximum fan-out node     ; Ahmes:inst|mux2x1:inst5|inst ;
-; Maximum fan-out          ; 48                           ;
-; Total fan-out            ; 946                          ;
-; Average fan-out          ; 3.05                         ;
-+--------------------------+------------------------------+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 39               ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; clock~input      ;
+; Maximum fan-out          ; 47               ;
+; Total fan-out            ; 901              ;
+; Average fan-out          ; 3.00             ;
++--------------------------+------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -224,12 +225,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                       ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------+--------------+
-; |testes                                ; 184 (0)           ; 48 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 39   ; 0            ; |testes                                                                                                                   ; work         ;
-;    |Ahmes:inst|                        ; 184 (3)           ; 48 (5)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst                                                                                                        ; work         ;
-;       |Ahmes_uc:inst|                  ; 40 (24)           ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst                                                                                          ; work         ;
-;          |Ahmes_instr_decod:inst|      ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|Ahmes_instr_decod:inst                                                                   ; work         ;
-;             |decod4x16:inst|           ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|Ahmes_instr_decod:inst|decod4x16:inst                                                    ; work         ;
-;          |m_inst_counter:inst1|        ; 11 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1                                                                     ; work         ;
+; |testes                                ; 175 (0)           ; 47 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 39   ; 0            ; |testes                                                                                                                   ; work         ;
+;    |Ahmes:inst|                        ; 175 (3)           ; 47 (5)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst                                                                                                        ; work         ;
+;       |Ahmes_uc:inst|                  ; 35 (25)           ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst                                                                                          ; work         ;
+;          |Ahmes_instr_decod:inst|      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|Ahmes_instr_decod:inst                                                                   ; work         ;
+;             |decod4x16:inst|           ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|Ahmes_instr_decod:inst|decod4x16:inst                                                    ; work         ;
+;          |m_inst_counter:inst1|        ; 4 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1                                                                     ; work         ;
 ;             |counter_8_bits:inst2|     ; 3 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2                                                ; work         ;
 ;                |generic_counter:inst3| ; 1 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst3                          ; work         ;
 ;                   |mux4x1:inst|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst3|mux4x1:inst              ; work         ;
@@ -238,20 +239,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                   |mux4x1:inst|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst4|mux4x1:inst              ; work         ;
 ;                      |mux2x1:inst2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst4|mux4x1:inst|mux2x1:inst2 ; work         ;
 ;                |generic_counter:inst|  ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|counter_8_bits:inst2|generic_counter:inst                           ; work         ;
-;             |decod3x8:inst1|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|decod3x8:inst1                                                      ; work         ;
-;       |ahmes_alu:inst7|                ; 49 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7                                                                                        ; work         ;
-;          |add_sub:inst10|              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10                                                                         ; work         ;
-;             |8_bits_adder:inst46|      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46                                                     ; work         ;
-;                |full_adder:inst1|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst1                                    ; work         ;
-;                |full_adder:inst2|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst2                                    ; work         ;
-;                |full_adder:inst3|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst3                                    ; work         ;
-;                |full_adder:inst4|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst4                                    ; work         ;
-;                |full_adder:inst5|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst5                                    ; work         ;
+;             |decod3x8:inst1|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1|decod3x8:inst1                                                      ; work         ;
+;       |ahmes_alu:inst7|                ; 67 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7                                                                                        ; work         ;
+;          |add_sub:inst10|              ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10                                                                         ; work         ;
+;             |8_bits_adder:inst46|      ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46                                                     ; work         ;
+;                |full_adder:inst1|      ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst1                                    ; work         ;
+;                   |half_adder:inst1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst1|half_adder:inst1                   ; work         ;
+;                |full_adder:inst2|      ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst2                                    ; work         ;
+;                   |half_adder:inst1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst2|half_adder:inst1                   ; work         ;
+;                |full_adder:inst3|      ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst3                                    ; work         ;
+;                   |half_adder:inst1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst3|half_adder:inst1                   ; work         ;
+;                |full_adder:inst4|      ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst4                                    ; work         ;
+;                   |half_adder:inst1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst4|half_adder:inst1                   ; work         ;
+;                |full_adder:inst5|      ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst5                                    ; work         ;
+;                   |half_adder:inst1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst5|half_adder:inst1                   ; work         ;
+;                |full_adder:inst6|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst6                                    ; work         ;
+;                |full_adder:inst7|      ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst7                                    ; work         ;
+;                   |half_adder:inst1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst7|half_adder:inst1                   ; work         ;
 ;                |full_adder:inst8|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|8_bits_adder:inst46|full_adder:inst8                                    ; work         ;
-;          |mux16x1_8bitsa:inst|         ; 38 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst                                                                    ; work         ;
-;             |mux16x1:inst1|            ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst1                                                      ; work         ;
-;                |mux4x1:inst3|          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst1|mux4x1:inst3                                         ; work         ;
-;                   |mux2x1:inst2|       ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst1|mux4x1:inst3|mux2x1:inst2                            ; work         ;
+;          |carry_check_ahmes:inst7|     ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|carry_check_ahmes:inst7                                                                ; work         ;
+;          |mux16x1_8bitsa:inst|         ; 45 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst                                                                    ; work         ;
+;             |mux16x1:inst1|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst1                                                      ; work         ;
+;                |mux4x1:inst3|          ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst1|mux4x1:inst3                                         ; work         ;
+;                   |mux2x1:inst2|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst1|mux4x1:inst3|mux2x1:inst2                            ; work         ;
 ;             |mux16x1:inst2|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst2                                                      ; work         ;
 ;                |mux4x1:inst3|          ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst2|mux4x1:inst3                                         ; work         ;
 ;                   |mux2x1:inst2|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst2|mux4x1:inst3|mux2x1:inst2                            ; work         ;
@@ -264,15 +274,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |mux16x1:inst5|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst5                                                      ; work         ;
 ;                |mux4x1:inst3|          ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst5|mux4x1:inst3                                         ; work         ;
 ;                   |mux2x1:inst2|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst5|mux4x1:inst3|mux2x1:inst2                            ; work         ;
-;             |mux16x1:inst6|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst6                                                      ; work         ;
-;                |mux4x1:inst3|          ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst6|mux4x1:inst3                                         ; work         ;
-;                   |mux2x1:inst2|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst6|mux4x1:inst3|mux2x1:inst2                            ; work         ;
-;             |mux16x1:inst7|            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst7                                                      ; work         ;
-;                |mux4x1:inst3|          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst7|mux4x1:inst3                                         ; work         ;
-;                   |mux2x1:inst2|       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst7|mux4x1:inst3|mux2x1:inst2                            ; work         ;
-;             |mux16x1:inst|             ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst                                                       ; work         ;
-;                |mux4x1:inst3|          ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst|mux4x1:inst3                                          ; work         ;
-;                   |mux2x1:inst2|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst|mux4x1:inst3|mux2x1:inst2                             ; work         ;
+;             |mux16x1:inst6|            ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst6                                                      ; work         ;
+;                |mux4x1:inst3|          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst6|mux4x1:inst3                                         ; work         ;
+;                   |mux2x1:inst2|       ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst6|mux4x1:inst3|mux2x1:inst2                            ; work         ;
+;             |mux16x1:inst7|            ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst7                                                      ; work         ;
+;                |mux4x1:inst3|          ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst7|mux4x1:inst3                                         ; work         ;
+;                   |mux2x1:inst2|       ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst7|mux4x1:inst3|mux2x1:inst2                            ; work         ;
+;             |mux16x1:inst|             ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst                                                       ; work         ;
+;                |mux4x1:inst3|          ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst|mux4x1:inst3                                          ; work         ;
+;                   |mux2x1:inst2|       ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst|mux4x1:inst3|mux2x1:inst2                             ; work         ;
+;          |mux4x1_8bits:inst5|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux4x1_8bits:inst5                                                                     ; work         ;
+;             |mux4x1:inst|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux4x1_8bits:inst5|mux4x1:inst                                                         ; work         ;
+;                |mux2x1:inst|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|mux4x1_8bits:inst5|mux4x1:inst|mux2x1:inst                                             ; work         ;
 ;          |overflow_check_ahmes:inst9|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|overflow_check_ahmes:inst9                                                             ; work         ;
 ;          |zero_check:inst24|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|ahmes_alu:inst7|zero_check:inst24                                                                      ; work         ;
 ;       |counter_8_bits:PC|              ; 15 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|counter_8_bits:PC                                                                                      ; work         ;
@@ -300,8 +313,6 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |generic_counter:inst|        ; 1 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|counter_8_bits:PC|generic_counter:inst                                                                 ; work         ;
 ;             |mux4x1:inst|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst                                                     ; work         ;
 ;                |mux2x1:inst2|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|counter_8_bits:PC|generic_counter:inst|mux4x1:inst|mux2x1:inst2                                        ; work         ;
-;       |memoria:inst4|                  ; 68 (68)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|memoria:inst4                                                                                          ; work         ;
-;       |mux2x1:inst5|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|mux2x1:inst5                                                                                           ; work         ;
 ;       |mux2x1_8bits:inst3|             ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|mux2x1_8bits:inst3                                                                                     ; work         ;
 ;          |mux2x1:inst1|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst1                                                                        ; work         ;
 ;          |mux2x1:inst2|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst2                                                                        ; work         ;
@@ -311,12 +322,23 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |mux2x1:inst6|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst6                                                                        ; work         ;
 ;          |mux2x1:inst7|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst7                                                                        ; work         ;
 ;          |mux2x1:inst|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|mux2x1_8bits:inst3|mux2x1:inst                                                                         ; work         ;
-;       |reg_8_bits:AC|                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|reg_8_bits:AC                                                                                          ; work         ;
+;       |reg_8_bits:AC|                  ; 0 (0)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|reg_8_bits:AC                                                                                          ; work         ;
 ;       |reg_8_bits:RDM|                 ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|reg_8_bits:RDM                                                                                         ; work         ;
 ;       |reg_8_bits:REM|                 ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|reg_8_bits:REM                                                                                         ; work         ;
 ;       |reg_8_bits:RI|                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|reg_8_bits:RI                                                                                          ; work         ;
+;       |teste:inst5|                    ; 47 (47)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |testes|Ahmes:inst|teste:inst5                                                                                            ; work         ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------+
+; Registers Removed During Synthesis                                    ;
++---------------------------------------+-------------------------------+
+; Register name                         ; Reason for Removal            ;
++---------------------------------------+-------------------------------+
+; Ahmes:inst|reg_8_bits:AC|inst7        ; Merged with Ahmes:inst|inst23 ;
+; Total Number of Removed Registers = 1 ;                               ;
++---------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------+
@@ -324,12 +346,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 48    ;
-; Number of registers using Synchronous Clear  ; 4     ;
+; Total registers                              ; 47    ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 48    ;
+; Number of registers using Asynchronous Clear ; 47    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 44    ;
+; Number of registers using Clock Enable       ; 43    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -340,8 +362,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------+
 ; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |testes|Ahmes:inst|counter_8_bits:PC|generic_counter:inst9|inst5                                     ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 8 LEs                ; 6 LEs                  ; No         ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst|mux4x1:inst3|mux2x1:inst2|inst2  ;
-; 12:1               ; 6 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; No         ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst1|mux4x1:inst3|mux2x1:inst2|inst2 ;
+; 12:1               ; 6 bits    ; 48 LEs        ; 30 LEs               ; 18 LEs                 ; No         ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst6|mux4x1:inst3|mux2x1:inst2|inst2 ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |testes|Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst7|mux4x1:inst3|mux2x1:inst2|inst2 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------+
 
 
@@ -360,7 +382,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Sep 11 18:29:36 2022
+    Info: Processing started: Mon Sep 26 20:54:16 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off testes -c testes
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file testes.bdf
@@ -403,16 +425,10 @@ Info (12127): Elaborating entity "testes" for the top level hierarchy
 Warning (12125): Using design file ahmes.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Ahmes
 Info (12128): Elaborating entity "Ahmes" for hierarchy "Ahmes:inst"
-Warning (275043): Pin "c_fl" is missing source
-Warning (275008): Primitive "DFFE" of instance "inst12" not used
-Warning (275008): Primitive "VCC" of instance "inst29" not used
 Warning (12125): Using design file ahmes_alu.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: ahmes_alu
 Info (12128): Elaborating entity "ahmes_alu" for hierarchy "Ahmes:inst|ahmes_alu:inst7"
 Info (12128): Elaborating entity "carry_check_ahmes" for hierarchy "Ahmes:inst|ahmes_alu:inst7|carry_check_ahmes:inst7"
-Warning (12125): Using design file shl.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: shl
-Info (12128): Elaborating entity "shl" for hierarchy "Ahmes:inst|ahmes_alu:inst7|shl:inst13"
 Warning (12125): Using design file mux4x1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: mux4x1
 Info (12128): Elaborating entity "mux4x1" for hierarchy "Ahmes:inst|ahmes_alu:inst7|mux4x1:inst6"
@@ -420,18 +436,11 @@ Warning (12125): Using design file mux2x1.bdf, which is not specified as a desig
     Info (12023): Found entity 1: mux2x1
 Info (12128): Elaborating entity "mux2x1" for hierarchy "Ahmes:inst|ahmes_alu:inst7|mux4x1:inst6|mux2x1:inst2"
 Info (12128): Elaborating entity "shr" for hierarchy "Ahmes:inst|ahmes_alu:inst7|shr:inst23"
+Warning (12125): Using design file shl.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: shl
+Info (12128): Elaborating entity "shl" for hierarchy "Ahmes:inst|ahmes_alu:inst7|shl:inst13"
 Info (12128): Elaborating entity "ror" for hierarchy "Ahmes:inst|ahmes_alu:inst7|ror:inst72"
 Info (12128): Elaborating entity "rol" for hierarchy "Ahmes:inst|ahmes_alu:inst7|rol:inst84"
-Info (12128): Elaborating entity "borrow_check_ahmes" for hierarchy "Ahmes:inst|ahmes_alu:inst7|borrow_check_ahmes:inst8"
-Warning (12125): Using design file zero_check.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: zero_check
-Info (12128): Elaborating entity "zero_check" for hierarchy "Ahmes:inst|ahmes_alu:inst7|zero_check:inst24"
-Warning (12125): Using design file mux16x1_8bitsa.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: mux16x1_8bitsa
-Info (12128): Elaborating entity "mux16x1_8bitsa" for hierarchy "Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst"
-Warning (12125): Using design file mux16x1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: mux16x1
-Info (12128): Elaborating entity "mux16x1" for hierarchy "Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst"
 Info (12128): Elaborating entity "add_sub" for hierarchy "Ahmes:inst|ahmes_alu:inst7|add_sub:inst10"
 Warning (12125): Using design file 8_bits_adder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: 8_bits_adder
@@ -445,6 +454,16 @@ Info (12128): Elaborating entity "half_adder" for hierarchy "Ahmes:inst|ahmes_al
 Warning (12125): Using design file mux2x1_8bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: mux2x1_8bits
 Info (12128): Elaborating entity "mux2x1_8bits" for hierarchy "Ahmes:inst|ahmes_alu:inst7|add_sub:inst10|mux2x1_8bits:inst10"
+Info (12128): Elaborating entity "borrow_check_ahmes" for hierarchy "Ahmes:inst|ahmes_alu:inst7|borrow_check_ahmes:inst8"
+Warning (12125): Using design file zero_check.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: zero_check
+Info (12128): Elaborating entity "zero_check" for hierarchy "Ahmes:inst|ahmes_alu:inst7|zero_check:inst24"
+Warning (12125): Using design file mux16x1_8bitsa.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mux16x1_8bitsa
+Info (12128): Elaborating entity "mux16x1_8bitsa" for hierarchy "Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst"
+Warning (12125): Using design file mux16x1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mux16x1
+Info (12128): Elaborating entity "mux16x1" for hierarchy "Ahmes:inst|ahmes_alu:inst7|mux16x1_8bitsa:inst|mux16x1:inst"
 Warning (12125): Using design file or_8bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: or_8bits
 Info (12128): Elaborating entity "or_8bits" for hierarchy "Ahmes:inst|ahmes_alu:inst7|or_8bits:inst2"
@@ -461,9 +480,6 @@ Warning (12125): Using design file negative_check.bdf, which is not specified as
     Info (12023): Found entity 1: negative_check
 Info (12128): Elaborating entity "negative_check" for hierarchy "Ahmes:inst|ahmes_alu:inst7|negative_check:inst4"
 Info (12128): Elaborating entity "overflow_check_ahmes" for hierarchy "Ahmes:inst|ahmes_alu:inst7|overflow_check_ahmes:inst9"
-Warning (12125): Using design file reg_8_bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: reg_8_bits
-Info (12128): Elaborating entity "reg_8_bits" for hierarchy "Ahmes:inst|reg_8_bits:AC"
 Info (12128): Elaborating entity "Ahmes_uc" for hierarchy "Ahmes:inst|Ahmes_uc:inst"
 Info (12128): Elaborating entity "m_inst_counter" for hierarchy "Ahmes:inst|Ahmes_uc:inst|m_inst_counter:inst1"
 Warning (12125): Using design file decod3x8.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -486,20 +502,24 @@ Warning (12125): Using design file decod2x4.bdf, which is not specified as a des
 Info (12128): Elaborating entity "decod2x4" for hierarchy "Ahmes:inst|Ahmes_uc:inst|Ahmes_instr_decod:inst|decod2x4:inst4"
 Info (12128): Elaborating entity "cond_test" for hierarchy "Ahmes:inst|Ahmes_uc:inst|cond_test:inst15"
 Info (12128): Elaborating entity "decod1x2" for hierarchy "Ahmes:inst|Ahmes_uc:inst|cond_test:inst15|decod1x2:inst3"
-Info (12128): Elaborating entity "memoria" for hierarchy "Ahmes:inst|memoria:inst4"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "carry" is stuck at GND
+Warning (12125): Using design file reg_8_bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: reg_8_bits
+Info (12128): Elaborating entity "reg_8_bits" for hierarchy "Ahmes:inst|reg_8_bits:RI"
+Warning (12125): Using design file teste.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: teste-circ1
+    Info (12023): Found entity 1: teste
+Info (12128): Elaborating entity "teste" for hierarchy "Ahmes:inst|teste:inst5"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 242 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 231 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 37 output pins
-    Info (21061): Implemented 203 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info (21061): Implemented 192 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
     Info: Peak virtual memory: 4701 megabytes
-    Info: Processing ended: Sun Sep 11 18:29:41 2022
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Processing ended: Mon Sep 26 20:54:19 2022
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
 
 

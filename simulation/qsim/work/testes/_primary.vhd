@@ -9,9 +9,9 @@ entity testes is
         overflow        : out    vl_logic;
         carry           : out    vl_logic;
         borrow          : out    vl_logic;
+        ac              : out    vl_logic_vector(7 downto 0);
         instr           : out    vl_logic_vector(7 downto 0);
         pc              : out    vl_logic_vector(7 downto 0);
-        s               : out    vl_logic_vector(7 downto 0);
-        t               : out    vl_logic_vector(7 downto 0)
+        s               : out    vl_logic_vector(7 downto 0)
     );
 end testes;

@@ -450,7 +450,7 @@ applicable agreement for further details.
 	(pt 480 376)
 )
 (connector
-	(text "k1" (rect 392 216 403 228)(font "Arial" ))
+	(text "k1" (rect 384 216 395 228)(font "Arial" ))
 	(pt 376 232)
 	(pt 408 232)
 )
